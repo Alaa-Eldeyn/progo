@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "cairo", sans-serif;
+  @apply bg-primary text-white;
+}
+
+.soft {
+  @apply transition duration-200 ease-in-out;
+}
+@layer{
+  .container {
+    @apply mx-auto px-4;
+  }
+}
+.bg_hero{
+  background-image: url("./assets/bg-hero.png");
+  @apply w-full bg-cover bg-right bg-no-repeat;
+}
