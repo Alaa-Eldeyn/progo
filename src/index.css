@@ -10,7 +10,7 @@
 }
 
 .soft {
-  @apply transition duration-200 ease-in-out;
+  @apply transition-all duration-200 ease-in-out;
 }
 @layer{
   .container {
@@ -20,4 +20,8 @@
 .bg_hero{
   background-image: url("./assets/bg-hero.png");
   @apply w-full bg-cover bg-right bg-no-repeat;
+}
+
+.center {
+  @apply flex items-center justify-center;
 }

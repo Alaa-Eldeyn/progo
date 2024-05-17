@@ -19,7 +19,7 @@ function App() {
     }
   }, [lang]);
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen overflow-hidden">
       <Header />
       <SideBar />
       <Routes>

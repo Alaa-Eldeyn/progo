@@ -7,6 +7,7 @@ export const AppProvider = ({ children }) => {
   let lang = Cookies.get("i18next") || "en";
   const [isEnglish, setIsEnglish] = useState(lang === "en");
   const [sideBarOpen, setSideBarOpen] = useState(false);
+  
   return (
     <AppContext.Provider
       value={{ sideBarOpen, setSideBarOpen,isEnglish, setIsEnglish, lang }}

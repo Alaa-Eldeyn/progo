@@ -10,7 +10,7 @@ const Header = () => {
   const { t } = useTranslation();
   return (
     <header className="h-20 bg-light">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="container lg:min-h-screen">
         <div className="flex h-20 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <Logo />
@@ -24,8 +24,8 @@ const Header = () => {
                     <NavLink
                       className={({ isActive }) =>
                         `${
-                          isActive ? "bg-secondary" : null
-                        } text-white soft hover:bg-secondary rounded-full px-3`
+                          isActive ? "!text-secondary" : null
+                        } text-white soft hover:!text-secondary rounded-full px-3`
                       }
                       to={href}
                     >
