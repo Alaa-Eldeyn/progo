@@ -58,7 +58,7 @@ const FAQ = () => {
                 key={index}
                 open={open === index + 1}
                 icon={<Icon id={index + 1} open={open} />}
-                className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 text-start"
+                className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 py-3 text-start"
               >
                 <AccordionHeader
                   onClick={() => handleOpen(index + 1)}
