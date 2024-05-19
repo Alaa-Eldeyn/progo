@@ -16,7 +16,7 @@ export default withMT({
         md: "768px",
         lg: "992px",
         xl: "1200px",
-        xxl: "1300px",
+        "2xl": "1800px",
       },
       backgroundSize: {
         "size-200": "200% 200%",

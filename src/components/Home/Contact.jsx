@@ -10,7 +10,7 @@ const Contact = () => {
     <section className="bg-light relative min-h-[600px]">
       <div className="h-full w-[30%] max-w-80 bg-secondary absolute top-0 right-0" />
       <div className="flex justify-between items-center">
-        <div className="p-10 text-start md:max-w-[35%]">
+        <div className="py-10 text-start md:max-w-[35%] container">
           <Logo />
           <h2 className="text-3xl font-bold mt-10">Contact Us</h2>
           <hr className=" bg-secondary h-1 mt-2 rounded max-w-20  border-none " />

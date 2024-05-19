@@ -9,16 +9,16 @@ const Header = () => {
     useGlobalContext();
   const { t } = useTranslation();
   return (
-    <header className="h-20 bg-light">
+    <header className="h-20 2xl:h-28 bg-light">
       <div className="container lg:min-h-screen">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 2xl:h-28 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <Logo />
           </div>
 
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex items-center gap-6 text-sm">
+              <ul className="flex items-center gap-6 text-sm 2xl:text-xl">
                 {navItems.map(({ name, href }) => (
                   <li key={name}>
                     <NavLink

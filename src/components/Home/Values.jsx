@@ -18,7 +18,7 @@ const Values = () => {
             The story and values behind our company
           </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 max-w-[1000px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 max-w-[1000px] 2xl:max-w-[1200px] mx-auto">
           {valueCards.map((item) => (
             <ValueCard key={item.id} {...item} />
           ))}

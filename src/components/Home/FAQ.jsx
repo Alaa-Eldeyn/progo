@@ -35,22 +35,20 @@ const FAQ = () => {
 
   return (
     <section className="relative bg-light min-h-[700px] overflow-hidden">
-      <div
-        className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0`}
-      >
+      <div className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0`}>
         <img src={bg_hero} className={`h-full w-[90%] float-right`} alt="" />
       </div>
       <div className="container py-24 flex flex-col md:flex-row gap-10">
         <div className=" text-start">
-          <p className="text-secondary">FAQ</p>
-          <h2 className="text-[40px] font-bold leading-tight">
+          <p className="text-secondary 2xl:text-xl">FAQ</p>
+          <h2 className="text-[40px] 2xl:text-[60px] font-bold leading-tight">
             Frequently Asked <span className="text-secondary">Questions</span>{" "}
           </h2>
-          <h6 className="pt-2">
+          <h6 className="pt-2 2xl:text-xl">
             If you have any other questions, you can contact me by email
           </h6>
         </div>
-        <div className="soft md:max-w-[63%] min-h-[550px]">
+        <div className="soft md:max-w-[63%] min-h-[550px] 2xl:min-h-[650px]">
           {/* Loop with the index instead of number */}
           {faq.map((item, index) => {
             return (
@@ -58,15 +56,15 @@ const FAQ = () => {
                 key={index}
                 open={open === index + 1}
                 icon={<Icon id={index + 1} open={open} />}
-                className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 py-3 text-start"
+                className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 py-3  2xl:py-5  text-start"
               >
                 <AccordionHeader
                   onClick={() => handleOpen(index + 1)}
-                  className="text-md font-extrabold"
+                  className="text-md 2xl:text-2xl font-extrabold"
                 >
                   {item.question}
                 </AccordionHeader>
-                <AccordionBody className="text-justify text-sm pt-0">
+                <AccordionBody className="text-justify text-sm pt-3 2xl:text-lg">
                   {item.answer}
                 </AccordionBody>
               </Accordion>

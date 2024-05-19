@@ -11,7 +11,11 @@ const SocialMedia = () => {
             target="_blank"
             aria-label={item.name}
           >
-            <img src={item.icon} className="w-5 h-5" alt={item.name} />
+            <img
+              src={item.icon}
+              alt={item.name}
+              className={` w-6 h-6 2xl:w-8 2xl:h-8`}
+            />
           </a>
         );
       })}
