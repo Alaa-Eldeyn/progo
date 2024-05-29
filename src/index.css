@@ -8,16 +8,15 @@
   font-family: "cairo", sans-serif;
   @apply bg-primary text-white;
 }
-
 .soft {
-  @apply transition-all duration-200 ease-in-out;
+  @apply transition-all duration-300 ease-in-out;
 }
-@layer{
+@layer {
   .container {
     @apply mx-auto px-4;
   }
 }
-.bg_hero{
+.bg_hero {
   background-image: url("./assets/bg-hero.png");
   @apply w-full bg-cover bg-right bg-no-repeat;
 }
