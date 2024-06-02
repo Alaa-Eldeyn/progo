@@ -4,12 +4,18 @@ import phone from "../../assets/call-svgrepo-com (1) 1.svg";
 import location from "../../assets/location-svgrepo-com 1.svg";
 import clock from "../../assets/clock-svgrepo-com 1.svg";
 import { socialMedia } from "../../data/data";
+import { motion } from "framer-motion";
+import { toRight, toLeft } from "../../utils/motionVariants";
 
 const Contact = () => {
   return (
     <section className="bg-light relative overflow-hidden">
       <div className="flex justify-between md:items-center h-full min-h-[700px] items-end flex-col md:flex-row gap-5">
-        <div className="py-16 text-start md:max-w-[35%] container">
+        <motion.div
+          initial={toRight.hidden}
+          animate={toRight.visible}
+          className="py-16 text-start md:max-w-[35%] container"
+        >
           <Logo />
           <h2 className="text-3xl font-bold mt-10">Contact Us</h2>
           <hr className=" bg-secondary h-1 mt-2 rounded max-w-20  border-none " />
@@ -52,10 +58,14 @@ const Contact = () => {
               Send
             </button>
           </form>
-        </div>
+        </motion.div>
         <div className="relative h-[720px] w-[90%] md:w-1/2">
           <div className="w-[65%] md:w-[30%] max-w-80 bg-secondary absolute right-0 z-0 h-full top-0" />
-          <div className=" absolute top-1/2 -translate-y-1/2 p-10 w-full h-fit bg-primary text-start z-10">
+          <motion.div
+            initial={{ x: 100, y: "-50%" }}
+            animate={{ x: 0, y: "-50%" }}
+            className=" absolute top-1/2 -translate-y-1/2 p-10 w-full h-fit bg-primary text-start z-10"
+          >
             <div className="w-8 h-8 absolute -top-3 -left-3 bg-secondary" />
             <div className="">
               <h3 className=" text-3xl mb-5">Info</h3>
@@ -104,7 +114,7 @@ const Contact = () => {
                 })}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

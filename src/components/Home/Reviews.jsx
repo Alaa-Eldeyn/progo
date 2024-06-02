@@ -1,21 +1,40 @@
 import dots from "../../assets/dots.svg";
 import quote from "../../assets/quote.svg";
 import testo from "../../assets/Rectangle 65.png";
+import { motion } from "framer-motion";
+import { toRight, toDown, toUp } from "../../utils/motionVariants";
+
 const Reviews = () => {
   return (
     <section className="py-24 relative min-h-[600px]">
       <div>
-        <div className=" text-3xl mx-auto w-fit center gap-2">
+        <motion.div
+          initial={toDown.hidden}
+          animate={toDown.visible}
+          transition={{ delay: 0.4 }}
+          className=" text-3xl mx-auto w-fit center gap-2"
+        >
           Some reviews of
           <div className="flex flex-col gap-1 mt-3">
             <span className=" w-10 bg-secondary h-[2px]"> </span>
             <span className=" w-10 bg-secondary h-[2px]"> </span>
             <span className=" w-10 bg-secondary h-[2px]"> </span>
           </div>
-        </div>
+        </motion.div>
         <div className="text-[60px] font-extrabold tracking-wider w-fit mt-4 mx-auto">
-          <div className="bg-secondary w-full h-6 bottom-0 z-0" />
-          <div className="-mt-[67px]">Our Clients.</div>
+          <motion.div
+            initial={toRight.hidden}
+            animate={toRight.visible}
+            className="bg-secondary w-full h-6 bottom-0 z-0"
+          />
+          <motion.div
+            initial={toUp.hidden}
+            animate={toUp.visible}
+            transition={{ delay: 0.2 }}
+            className="-mt-[67px]"
+          >
+            Our Clients.
+          </motion.div>
         </div>
       </div>
       <div className="container center flex-col gap-10">
@@ -25,8 +44,12 @@ const Reviews = () => {
         <div className="absolute right-0 rotate-180 top-[26rem] w-80">
           <img src={dots} alt="" />
         </div>
-        <div className="bg-light w-full max-w-[800px] h-96 mt-20 relative rounded p-5 pt-20 pr-32 text-start ">
-          <div className="absolute -top-10 left-5 flex gap-3">
+        <motion.div
+          initial={toUp.hidden}
+          animate={toUp.visible}
+          transition={{ delay: 0.4 }}
+          className="bg-light w-full max-w-[800px] h-96 mt-20 relative rounded p-7 pt-20 pr-32 text-start ">
+          <div className="absolute -top-10 left-7 flex gap-3">
             <img src={quote} alt="" />
             <img src={quote} alt="" />
           </div>
@@ -48,7 +71,7 @@ const Reviews = () => {
             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolore.
           </div>
-        </div>
+        </motion.div>
         <div className="mx-auto center gap-1">
           <div className="w-10 h-1 bg-secondary rounded-full"></div>
           <div className="w-2 h-1 bg-light rounded-full"></div>

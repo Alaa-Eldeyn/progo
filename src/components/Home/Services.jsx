@@ -2,6 +2,8 @@ import bg_hero from "../../assets/bg-hero.svg";
 import { servicesCards } from "../../data/data";
 import MiniTitle from "../MiniTitle";
 import ServiceCard from "./ServiceCard";
+import { motion } from "framer-motion";
+import { toRight, toUp } from "../../utils/motionVariants";
 
 const Services = () => {
   return (
@@ -14,14 +16,26 @@ const Services = () => {
       <div className="container py-24">
         <div className="center flex-col">
           <MiniTitle title="Services" />
-          <h3 className="mt-3 text-3xl font-light max-w-[600px]">
+          <motion.h3
+            initial={toUp.hidden}
+            animate={toUp.visible}
+            transition={{ delay: 0.2 }}
+            className="mt-3 text-3xl font-light max-w-[600px]"
+          >
             Rhoda, designing and programming applications and the web in the
             Arab world
-          </h3>
+          </motion.h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-20 mt-32">
-          {servicesCards.map((item,index) => (
-            <ServiceCard key={index} {...item} />
+          {servicesCards.map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={toUp.hidden}
+              animate={toUp.visible}
+              transition={{ delay: index * 0.1 }}
+            >
+              <ServiceCard key={index} {...item} />
+            </motion.div>
           ))}
         </div>
       </div>

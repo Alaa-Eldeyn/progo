@@ -6,7 +6,7 @@ import {
 } from "../../data/data";
 import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
-
+import { toUp } from "../../utils/motionVariants";
 const HeadLine = ({ title }) => {
   return (
     <div className="center gap-3 pb-5">
@@ -24,8 +24,8 @@ const AllServices = () => {
         {graphicServices.map((item, index) => (
           <motion.div
             key={item.id}
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={toUp.hidden}
+            animate={toUp.visible}
             transition={{ delay: index * 0.1 }}
           >
             <ServiceCard {...item} />

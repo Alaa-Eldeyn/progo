@@ -1,10 +1,23 @@
 import { t } from "i18next";
+import { motion } from "framer-motion";
+import { toDown } from "../utils/motionVariants";
 
 const MiniTitle = ({ title }) => {
   return (
     <div className="w-fit max-w-[600px]">
-      <h2 className="text-3xl 2xl:text-[40px] font-bold tracking-wider">{t(title)}</h2>
-      <hr className="border-2 border-secondary mt-3 w-full rounded-full" />
+      <motion.h2
+        initial={toDown.hidden}
+        animate={toDown.visible}
+        transition={{ delay: 0.2 }}
+        className="text-3xl 2xl:text-[40px] font-bold tracking-wider"
+      >
+        {t(title)}
+      </motion.h2>
+      <motion.hr
+        initial={toDown.hidden}
+        animate={toDown.visible}
+        className="border-2 border-secondary mt-3 w-full rounded-full"
+      />
     </div>
   );
 };

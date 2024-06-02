@@ -6,6 +6,8 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import { faq } from "../../data/data";
+import { motion } from "framer-motion";
+import { toRight, toUp } from "../../utils/motionVariants";
 
 function Icon({ id, open }) {
   return (
@@ -38,7 +40,11 @@ const FAQ = () => {
       <div className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0`}>
         <img src={bg_hero} className={`h-full w-[90%] float-right`} alt="" />
       </div>
-      <div className="container py-24 flex flex-col md:flex-row gap-10">
+      <motion.div
+        initial={toRight.hidden}
+        animate={toRight.visible}
+        className="container py-24 flex flex-col md:flex-row gap-10"
+      >
         <div className=" text-start">
           <p className="text-secondary 2xl:text-xl">FAQ</p>
           <h2 className="text-[40px] 2xl:text-[60px] font-bold leading-tight">
@@ -52,26 +58,33 @@ const FAQ = () => {
           {/* Loop with the index instead of number */}
           {faq.map((item, index) => {
             return (
-              <Accordion
-                key={index}
-                open={open === index + 1}
-                icon={<Icon id={index + 1} open={open} />}
-                className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 py-3  2xl:py-5  text-start"
+              <motion.div
+                key={item.id}
+                initial={toUp.hidden}
+                animate={toUp.visible}
+                transition={{ delay: index * 0.1 }}
               >
-                <AccordionHeader
-                  onClick={() => handleOpen(index + 1)}
-                  className="text-md 2xl:text-2xl font-extrabold"
+                <Accordion
+                  key={index}
+                  open={open === index + 1}
+                  icon={<Icon id={index + 1} open={open} />}
+                  className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 py-3  2xl:py-5  text-start"
                 >
-                  {item.question}
-                </AccordionHeader>
-                <AccordionBody className="text-justify text-sm pt-3 2xl:text-lg">
-                  {item.answer}
-                </AccordionBody>
-              </Accordion>
+                  <AccordionHeader
+                    onClick={() => handleOpen(index + 1)}
+                    className="text-md 2xl:text-2xl font-extrabold"
+                  >
+                    {item.question}
+                  </AccordionHeader>
+                  <AccordionBody className="text-justify text-sm pt-3 2xl:text-lg">
+                    {item.answer}
+                  </AccordionBody>
+                </Accordion>
+              </motion.div>
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
