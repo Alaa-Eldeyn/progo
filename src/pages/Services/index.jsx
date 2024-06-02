@@ -1,21 +1,7 @@
 import img from "../../assets/Vector4.svg";
-import ServiceCard from "../../components/Service/ServiceCard";
-import {
-  graphicServices,
-  uiUxServices,
-  devServices,
-  digitalServices,
-} from "../../data/data";
-
-const HeadLine = ({ title }) => {
-  return (
-    <div className="center gap-3 pb-5">
-      <div className="text-xl">{title}</div>
-      <hr className="bg-secondary h-1 w-1 border-none rounded-full flex-grow" />
-      <hr className="bg-secondary h-1 w-10 border-none rounded-full " />
-    </div>
-  );
-};
+import AllServices from "../../components/Service/AllServices";
+import Subscribe from "../../components/Service/Subscribe";
+import Contact from "../../components/Home/Contact";
 
 const ServicesPage = () => {
   return (
@@ -39,44 +25,22 @@ const ServicesPage = () => {
         </div>
       </div>
       <div className="bg-light pb-24">
-        <div className="text-3xl py-16">
-          <p>
-            We have <span className="text-secondary">everything</span>
-          </p>
-          <p>
-            you <span className="text-secondary">need</span>
-          </p>
-        </div>
         <div className="container">
-          <HeadLine title="Graphic Design" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-16">
-            {graphicServices.map((item) => (
-              <ServiceCard key={item.id} {...item} />
-            ))}
+          <div className="text-3xl py-16">
+            <p>
+              We have <span className="text-secondary">everything</span>
+            </p>
+            <p>
+              you <span className="text-secondary">need</span>
+            </p>
           </div>
-
-          <HeadLine title="UI/UX Design" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  pb-16">
-            {uiUxServices.map((item) => (
-              <ServiceCard key={item.id} {...item} />
-            ))}
-          </div>
-
-          <HeadLine title="Development" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  pb-16">
-            {devServices.map((item) => (
-              <ServiceCard key={item.id} {...item} />
-            ))}
-          </div>
-
-          <HeadLine title="Digital Marketing" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  pb-16">
-            {digitalServices.map((item) => (
-              <ServiceCard key={item.id} {...item} />
-            ))}
-          </div>
+          <AllServices />
         </div>
       </div>
+      <div className="container">
+        <Subscribe />
+      </div>
+        <Contact />
     </section>
   );
 };

@@ -7,6 +7,7 @@ import Innovation from "../assets/Icon.svg";
 import TeamWork from "../assets/Icon-1.svg";
 import Excellent from "../assets/Icon-2.svg";
 import Responsibility from "../assets/Icon-3.svg";
+
 import srv1 from "../assets/ux (1) 1.svg";
 import srv2 from "../assets/smartphone-call 1.svg";
 import srv3 from "../assets/www 2.svg";
@@ -15,9 +16,11 @@ import srv5 from "../assets/branding 1.svg";
 import srv6 from "../assets/motion-graphics.svg";
 import srv7 from "../assets/social-media.svg";
 import srv8 from "../assets/seo.svg";
+
 import project1 from "../assets/Hi Community Cover.jpg";
 import project2 from "../assets/APPCover.jpg";
 import project3 from "../assets/sega.jpeg";
+
 import graphicService1 from "../assets/services/Code_perspective_matte.svg";
 import graphicService2 from "../assets/services/Code_perspective_matte-1.svg";
 import graphicService3 from "../assets/services/Code_perspective_matte-2.svg";
@@ -30,15 +33,18 @@ import graphicService9 from "../assets/services/Code_perspective_matte-8.svg";
 import graphicService10 from "../assets/services/Code_perspective_matte-9.svg";
 import graphicService11 from "../assets/services/Code_perspective_matte-10.svg";
 import graphicService12 from "../assets/services/Code_perspective_matte-11.svg";
+
 import uiUxService1 from "../assets/services/Code_perspective_matte-12.svg";
 import uiUxService2 from "../assets/services/Code_perspective_matte-13.svg";
 import uiUxService3 from "../assets/services/Code_perspective_matte-14.svg";
+
 import devServise1 from "../assets/services/Code_perspective_matte-15.svg";
 import devServise2 from "../assets/services/Code_perspective_matte-16.svg";
 import devServise3 from "../assets/services/Code_perspective_matte-17.svg";
 import devServise4 from "../assets/services/Code_perspective_matte-18.svg";
 import devServise5 from "../assets/services/Code_perspective_matte-19.svg";
 import devServise6 from "../assets/services/Code_perspective_matte-20.svg";
+
 import deigitalService1 from "../assets/services/Code_perspective_matte-21.svg";
 import deigitalService2 from "../assets/services/Code_perspective_matte-22.svg";
 import deigitalService3 from "../assets/services/Code_perspective_matte-23.svg";
@@ -53,6 +59,11 @@ import deigitalService11 from "../assets/services/Code_perspective_matte-31.svg"
 import deigitalService12 from "../assets/services/Code_perspective_matte-32.svg";
 import deigitalService13 from "../assets/services/Code_perspective_matte-33.svg";
 import deigitalService14 from "../assets/services/Code_perspective_matte-34.svg";
+
+import subscribe1 from "../assets/services/Group 1793.svg";
+import subscribe2 from "../assets/services/Group 1796.svg";
+import subscribe3 from "../assets/services/Group 1799.svg";
+import subscribe4 from "../assets/services/Group 1799.svg";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -496,6 +507,37 @@ const digitalServices = [
     icon: deigitalService14,
   },
 ];
+const subscribeData = [
+  {
+    id: 1,
+    title: "UI UX Design",
+    description:
+    "Sometimes features require a short description",
+    icon: subscribe1,
+  },
+  {
+    id: 2,
+    title: "Logo Branding",
+    description:
+    "Sometimes features require a short description",
+    icon: subscribe2,
+  },
+  {
+    id: 3,
+    title: "App Development",
+    description:
+    "Sometimes features require a short description",
+    icon: subscribe3,
+  },
+  {
+    id: 4,
+    title: "Web developement",
+    description:
+      "Sometimes features require a short description",
+    icon: subscribe4,
+  },
+  
+];
 
 export {
   navItems,
@@ -508,4 +550,5 @@ export {
   uiUxServices,
   devServices,
   digitalServices,
+  subscribeData,
 };

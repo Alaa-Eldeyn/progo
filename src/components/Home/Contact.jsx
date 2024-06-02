@@ -7,10 +7,9 @@ import { socialMedia } from "../../data/data";
 
 const Contact = () => {
   return (
-    <section className="bg-light relative min-h-[600px]">
-      <div className="h-full w-[30%] max-w-80 bg-secondary absolute top-0 right-0" />
-      <div className="flex justify-between items-center">
-        <div className="py-10 text-start md:max-w-[35%] container">
+    <section className="bg-light relative overflow-hidden">
+      <div className="flex justify-between md:items-center h-full min-h-[700px] items-end flex-col md:flex-row gap-5">
+        <div className="py-16 text-start md:max-w-[35%] container">
           <Logo />
           <h2 className="text-3xl font-bold mt-10">Contact Us</h2>
           <hr className=" bg-secondary h-1 mt-2 rounded max-w-20  border-none " />
@@ -46,54 +45,64 @@ const Contact = () => {
                 Message
               </label>
             </div>
-            <button className="bg-secondary text-white py-3 rounded-md tracking-[.3rem] hover:tracking-[.5rem] soft text-3xl font-bold">
+            <button
+              type="button"
+              className="bg-secondary text-white py-3 rounded-md tracking-[.3rem] hover:tracking-[.5rem] soft text-3xl font-bold"
+            >
               Send
             </button>
           </form>
         </div>
-        <div className="bg-primary relative min-h-96 w-1/2">
-          <div className="w-5 h-5 absolute -top-2 -left-2 bg-secondary"></div>
-          <div className=" p-10 text-start">
-            <h3 className=" text-3xl mb-5">Info</h3>
-            <table className="flex flex-col gap-10 justify-center items-start">
-              <tr className="center gap-4">
-                <td>
-                  <img src={mail} alt="" className="w-8 h-8" />
-                </td>
-                <td>progodesign.eg@gmail.com</td>
-              </tr>
-              <tr className="center gap-4">
-                <td>
-                  <img src={phone} alt="" className="w-8 h-8" />
-                </td>
-                <td>+20 0112 003 0082</td>
-              </tr>
-              <tr className="center gap-4">
-                <td>
-                  <img src={location} alt="" className="w-8 h-8" />
-                </td>
-                <td>Nasr city</td>
-              </tr>
-              <tr className="center gap-4">
-                <td>
-                  <img src={clock} alt="" className="w-8 h-8" />
-                </td>
-                <td>09:00AM - 05:00PM</td>
-              </tr>
-            </table>
-            <div className="center gap-10 !text-3xl mt-10">
-              {socialMedia.map((item) => {
-                return (
-                  <a
-                    key={item.id}
-                    href={item.link}
-                    target="_blank"
-                    aria-label={item.name}
-                  >
-                    <img src={item.icon} className="w-8 h-8" alt={item.name} />
-                  </a>
-                );
-              })}
+        <div className="relative h-[720px] w-[90%] md:w-1/2">
+          <div className="w-[65%] md:w-[30%] max-w-80 bg-secondary absolute right-0 z-0 h-full top-0" />
+          <div className=" absolute top-1/2 -translate-y-1/2 p-10 w-full h-fit bg-primary text-start z-10">
+            <div className="w-8 h-8 absolute -top-3 -left-3 bg-secondary" />
+            <div className="">
+              <h3 className=" text-3xl mb-5">Info</h3>
+              <div className="flex flex-col gap-10 justify-center items-start">
+                <div className="center gap-4">
+                  <div>
+                    <img src={mail} alt="" className="w-8 h-8" />
+                  </div>
+                  <p>progodesign.eg@gmail.com</p>
+                </div>
+                <div className="center gap-4">
+                  <div>
+                    <img src={phone} alt="" className="w-8 h-8" />
+                  </div>
+                  <p>+20 0112 003 0082</p>
+                </div>
+                <div className="center gap-4">
+                  <div>
+                    <img src={location} alt="" className="w-8 h-8" />
+                  </div>
+                  <p>Nasr city</p>
+                </div>
+                <div className="center gap-4">
+                  <div>
+                    <img src={clock} alt="" className="w-8 h-8" />
+                  </div>
+                  <p>09:00AM - 05:00PM</p>
+                </div>
+              </div>
+              <div className="center gap-10 !text-3xl mt-10">
+                {socialMedia.map((item) => {
+                  return (
+                    <a
+                      key={item.id}
+                      href={item.link}
+                      target="_blank"
+                      aria-label={item.name}
+                    >
+                      <img
+                        src={item.icon}
+                        className="w-8 h-8"
+                        alt={item.name}
+                      />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
@@ -103,3 +112,47 @@ const Contact = () => {
 };
 
 export default Contact;
+
+{
+  /* <h3 className=" text-3xl mb-5">Info</h3>
+<table className="flex flex-col gap-10 justify-center items-start">
+  <div className="center gap-4">
+    <td>
+      <img src={mail} alt="" className="w-8 h-8" />
+    </td>
+    <td>progodesign.eg@gmail.com</td>
+  </div>
+  <tr className="center gap-4">
+    <td>
+      <img src={phone} alt="" className="w-8 h-8" />
+    </td>
+    <td>+20 0112 003 0082</td>
+  </tr>
+  <tr className="center gap-4">
+    <td>
+      <img src={location} alt="" className="w-8 h-8" />
+    </td>
+    <td>Nasr city</td>
+  </tr>
+  <tr className="center gap-4">
+    <td>
+      <img src={clock} alt="" className="w-8 h-8" />
+    </td>
+    <td>09:00AM - 05:00PM</td>
+  </tr>
+</table>
+<div className="center gap-10 !text-3xl mt-10">
+  {socialMedia.map((item) => {
+    return (
+      <a
+        key={item.id}
+        href={item.link}
+        target="_blank"
+        aria-label={item.name}
+      >
+        <img src={item.icon} className="w-8 h-8" alt={item.name} />
+      </a>
+    );
+  })}
+</div> */
+}
