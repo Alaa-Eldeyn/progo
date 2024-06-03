@@ -30,13 +30,13 @@ function Icon({ id, open }) {
   );
 }
 
-const FAQ = () => {
+const FAQ = ({ bg }) => {
   const [open, setOpen] = useState(1);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <section className="relative bg-light min-h-[700px] overflow-hidden">
+    <section className={`relative ${bg} min-h-[700px] overflow-hidden`}>
       <div className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0`}>
         <img src={bg_hero} className={`h-full w-[90%] float-right`} alt="" />
       </div>

@@ -25,7 +25,7 @@ const Portfolio = () => {
               animate={toUp.visible}
               transition={{ delay: index * 0.1 }}
             >
-              <ProjectCard {...item} />
+              <ProjectCard {...item} bg={"bg-light"} />
             </motion.div>
           ))}
         </div>

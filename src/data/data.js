@@ -511,32 +511,156 @@ const subscribeData = [
   {
     id: 1,
     title: "UI UX Design",
-    description:
-    "Sometimes features require a short description",
+    description: "Sometimes features require a short description",
     icon: subscribe1,
   },
   {
     id: 2,
     title: "Logo Branding",
-    description:
-    "Sometimes features require a short description",
+    description: "Sometimes features require a short description",
     icon: subscribe2,
   },
   {
     id: 3,
     title: "App Development",
-    description:
-    "Sometimes features require a short description",
+    description: "Sometimes features require a short description",
     icon: subscribe3,
   },
   {
     id: 4,
     title: "Web developement",
-    description:
-      "Sometimes features require a short description",
+    description: "Sometimes features require a short description",
     icon: subscribe4,
   },
-  
+];
+const portfolioProjects = [
+  {
+    label: "All",
+    value: "all",
+    projects: [...projectCards],
+  },
+  {
+    label: "Web Application",
+    value: "web",
+    projects: [
+      {
+        id: 1,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project1,
+      },
+      {
+        id: 2,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project2,
+      },
+      {
+        id: 3,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project3,
+      },
+    ],
+  },
+  {
+    label: "Mobile Application",
+    value: "mobile",
+    projects: [
+      {
+        id: 1,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project3,
+      },
+      {
+        id: 2,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project2,
+      },
+      {
+        id: 3,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project1,
+      },
+    ],
+  },
+  {
+    label: "Graphic design",
+    value: "graphic",
+    projects: [
+      {
+        id: 1,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project1,
+      },
+      {
+        id: 2,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project2,
+      },
+      {
+        id: 3,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project3,
+      },
+    ],
+  },
+  {
+    label: "Video Design",
+    value: "video",
+    projects: [
+      {
+        id: 1,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project3,
+      },
+      {
+        id: 2,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project2,
+      },
+      {
+        id: 3,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project1,
+      },
+      {
+        id: 4,
+        title: "Hi Community!",
+        description: "Development & UI/UX Design & SEO",
+        image: project1,
+      },
+    ],
+  },
+];
+const aboutGoals = [
+  {
+    id: 1,
+    title: "Our Mission",
+    description:
+      "Make your business shine online with a website & mobile application designed just for you.",
+  },
+  {
+    id: 2,
+    title: "Our Vision",
+    description:
+      "We strive to exceed expectations and be the best that we can be, we are your partner in success.",
+  },
+  {
+    id: 3,
+    title: "Our Goals",
+    description:
+      "We provide quality services in various fields, rest assured our services will fulfill your Requirements.",
+  },
 ];
 
 export {
@@ -551,4 +675,6 @@ export {
   devServices,
   digitalServices,
   subscribeData,
+  portfolioProjects,
+  aboutGoals,
 };

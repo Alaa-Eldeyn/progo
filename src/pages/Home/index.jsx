@@ -15,7 +15,7 @@ const HomePage = () => {
       <Values />
       <Services />
       <Portfolio />
-      <FAQ />
+      <FAQ bg={"bg-light"}/>
       <Reviews />
       <Contact />
     </>

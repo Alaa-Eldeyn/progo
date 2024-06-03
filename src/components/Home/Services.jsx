@@ -3,7 +3,7 @@ import { servicesCards } from "../../data/data";
 import MiniTitle from "../MiniTitle";
 import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
-import { toRight, toUp } from "../../utils/motionVariants";
+import { toUp } from "../../utils/motionVariants";
 
 const Services = () => {
   return (
