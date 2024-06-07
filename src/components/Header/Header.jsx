@@ -1,16 +1,15 @@
 import Logo from "../Logo";
 import { Link, NavLink } from "react-router-dom";
 import { useGlobalContext } from "../context";
-import i18n from "i18next";
-import { useTranslation } from "react-i18next";
+import i18n, { t } from "i18next";
 import { navItems } from "../../data/data";
+
 const Header = () => {
   const { isEnglish, setIsEnglish, sideBarOpen, setSideBarOpen } =
     useGlobalContext();
-  const { t } = useTranslation();
   return (
-    <header className="h-20 2xl:h-28 bg-light">
-      <div className="container lg:min-h-screen">
+    <header className="h-20 2xl:h-28 bg-light fixed top-0 w-full z-50 shadow-lg">
+      <div className="container ">
         <div className="flex h-20 2xl:h-28 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <Logo />
@@ -46,21 +45,19 @@ const Header = () => {
               </ul>
             </nav>
 
-            <div className="hidden md:flex">
+            <div className="flex gap-3">
               <Link
                 className="rounded-full px-5 py-1.5 text-sm font-medium text-secondary border border-secondary hover:bg-secondary hover:text-white soft"
                 to="#"
               >
                 {t("start now")}
               </Link>
-            </div>
-
             <div className="block md:hidden">
               <button
                 onClick={() => {
                   setSideBarOpen(!sideBarOpen);
                 }}
-                className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                className="rounded bg-primary p-2 text-white transition hover:text-gray-600/75"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +75,8 @@ const Header = () => {
                 </svg>
               </button>
             </div>
+            </div>
+
           </div>
         </div>
       </div>

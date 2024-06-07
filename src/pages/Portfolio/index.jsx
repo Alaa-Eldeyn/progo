@@ -17,7 +17,7 @@ const PortfolioPage = () => {
         coloredWord={"Our"}
         whiteWord={"Portfolio"}
       /> */}
-      <div className="h-36 sm:h-52 overflow-hidden relative">
+      <div className="h-36 sm:h-52 overflow-hidden relative mt-20">
         <img
           src={img}
           alt=""

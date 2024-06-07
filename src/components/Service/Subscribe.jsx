@@ -3,10 +3,10 @@ import phone from "../../assets/services/phone.svg"
 const Subscribe = () => {
   return (
     <div className="relative">
-      <div className="center pt-24 pb-44">
+      <div className="center pt-10 md:pt-24 pb-20 md:pb-44">
         <div className="flex gap-16 flex-col items-center md:flex-row text-start max-w-[1100px]">
           <div>
-            <div className="text-justify max-w-[330px]">
+            <div className="text-justify md:max-w-[330px]">
               <h1 className="text-[32px] tracking-wider font-extrabold">
                 How we can help you
               </h1>
@@ -53,11 +53,11 @@ const Subscribe = () => {
             </div>
           </div>
           <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+            <div className="grid grid-cols-2 gap-6 md:gap-12">
               {subscribeData.map(({ icon, title, description, id }) => (
                 <div key={id} className="sm:max-w-44">
                   <img src={icon} alt="" />
-                  <h3 className="font-bold py-2 tracking-wide">{title}</h3>
+                  <h3 className="font-bold py-3 tracking-wide">{title}</h3>
                   <p className="text-sm text-gray-500 tracking-wide">
                     {description}
                   </p>

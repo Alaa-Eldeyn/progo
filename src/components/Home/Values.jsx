@@ -13,7 +13,7 @@ const Values = () => {
       >
         <img src={bg_hero} className={`h-full w-full float-right`} alt="" />
       </div>
-      <div className="container py-24">
+      <div className="container py-10 md:py-24">
         <div className="center flex-col">
           <MiniTitle title="Our Values" />
           <motion.h3
@@ -25,7 +25,7 @@ const Values = () => {
             The story and values behind our company
           </motion.h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 max-w-[1000px] 2xl:max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 mt-12 max-w-[1000px] 2xl:max-w-[1200px] mx-auto">
           {valueCards.map((item, index) => (
             <motion.div
               key={item.id}

@@ -13,14 +13,14 @@ const Services = () => {
       >
         <img src={bg_hero} className={`h-full w-[90%] float-right`} alt="" />
       </div>
-      <div className="container py-24">
+      <div className="container py-10 md:py-24">
         <div className="center flex-col">
           <MiniTitle title="Services" />
           <motion.h3
             initial={toUp.hidden}
             animate={toUp.visible}
             transition={{ delay: 0.2 }}
-            className="mt-3 text-3xl font-light max-w-[600px]"
+            className="mt-3 text-xl md:text-3xl font-light max-w-[600px]"
           >
             Rhoda, designing and programming applications and the web in the
             Arab world

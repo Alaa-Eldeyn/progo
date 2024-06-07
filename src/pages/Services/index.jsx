@@ -5,7 +5,7 @@ import Contact from "../../components/Home/Contact";
 
 const ServicesPage = () => {
   return (
-    <section>
+    <section className="mt-20">
       <div className="h-36 sm:h-52 overflow-hidden relative">
         <img
           src={img}
@@ -24,7 +24,7 @@ const ServicesPage = () => {
           />
         </div>
       </div>
-      <div className="bg-light pb-24">
+      <div className="bg-light md:pb-24">
         <div className="container">
           <div className="text-3xl py-16">
             <p>

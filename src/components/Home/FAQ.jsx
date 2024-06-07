@@ -43,14 +43,14 @@ const FAQ = ({ bg }) => {
       <motion.div
         initial={toRight.hidden}
         animate={toRight.visible}
-        className="container py-24 flex flex-col md:flex-row gap-10"
+        className="container py-10 md:py-24 flex flex-col md:flex-row gap-10"
       >
-        <div className=" text-start">
+        <div className=" text-center md:text-start">
           <p className="text-secondary 2xl:text-xl">FAQ</p>
           <h2 className="text-[40px] 2xl:text-[60px] font-bold leading-tight">
-            Frequently Asked <span className="text-secondary">Questions</span>{" "}
+            Frequently Asked <span className="text-secondary hidden md:block">Questions</span>{" "}
           </h2>
-          <h6 className="pt-2 2xl:text-xl">
+          <h6 className="pt-2 text-sm 2xl:text-xl">
             If you have any other questions, you can contact me by email
           </h6>
         </div>

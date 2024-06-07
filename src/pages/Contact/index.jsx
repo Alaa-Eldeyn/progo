@@ -3,7 +3,7 @@ import Contact from "../../components/Home/Contact";
 
 const ContactPage = () => {
   return (
-    <section>
+    <section className="mt-20">
       <div className="h-36 sm:h-52 overflow-hidden relative">
         <img
           src={img}
