@@ -4,9 +4,12 @@ import FAQ from "../../components/Home/FAQ";
 import Contact from "../../components/Home/Contact";
 import AboutUs from "../../components/About/AboutUs";
 import Goals from "../../components/About/Goals";
+import { ScrollUp } from "../../components/ScrollUp";
 
 const AboutUsPage = () => {
   return (
+    <>
+<ScrollUp />
     <section className="mt-20">
       <AboutHero />
       <AboutUs />
@@ -15,6 +18,7 @@ const AboutUsPage = () => {
       <FAQ />
       <Contact />
     </section>
+    </>
   );
 };
 

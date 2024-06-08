@@ -1,18 +1,20 @@
 import { subscribeData } from "../../data/data";
-import phone from "../../assets/services/phone.svg"
+import phone from "../../assets/services/phone.svg";
+import { t } from "i18next";
 const Subscribe = () => {
   return (
     <div className="relative">
       <div className="center pt-10 md:pt-24 pb-20 md:pb-44">
         <div className="flex gap-16 flex-col items-center md:flex-row text-start max-w-[1100px]">
           <div>
-            <div className="text-justify md:max-w-[330px]">
+            <div className="text-justify md:max-w-[350px]">
               <h1 className="text-[32px] tracking-wider font-extrabold">
-                How we can help you
+                {t("How we can help you")}
               </h1>
               <p className="text-gray-500 pt-2 pb-8">
-                Follow our newsletter. We will regulary update our latest
-                project and availability.
+                {t(
+                  "Follow our newsletter. We will regulary update our latest project and availability."
+                )}
               </p>
             </div>
             <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
@@ -46,7 +48,7 @@ const Subscribe = () => {
                     // type="submit" // if we will use form
                     className=" w-full text-sm font-medium text-center text-white rounded-xl cursor-pointer bg-secondary py-2 px-8"
                   >
-                    Subscribe
+                    {t("Subscribe")}
                   </button>
                 </div>
               </div>
@@ -57,9 +59,9 @@ const Subscribe = () => {
               {subscribeData.map(({ icon, title, description, id }) => (
                 <div key={id} className="sm:max-w-44">
                   <img src={icon} alt="" />
-                  <h3 className="font-bold py-3 tracking-wide">{title}</h3>
+                  <h3 className="font-bold py-3 tracking-wide">{t(title)}</h3>
                   <p className="text-sm text-gray-500 tracking-wide">
-                    {description}
+                    {t(description)}
                   </p>
                 </div>
               ))}
@@ -69,7 +71,7 @@ const Subscribe = () => {
       </div>
       <div className="w-full md:max-w-[800px] text-gray-700 mx-auto center flex-col !hidden md:!flex md:flex-row gap-5 absolute -bottom-10 left-1/2 -translate-x-1/2 z-10">
         <div className="bg-white p-5 rounded-2xl flex justify-between items-center gap-5 h-20 w-[100%] min-w-44 flex-grow shadow-lg shadow-white/20">
-          <div className="center text-black">
+          <div className="center text-black gap-3">
             <div className="bg-secondary p-3 rounded-xl mr-3">
               <svg
                 className="w-8 h-8 text-white"
@@ -86,9 +88,9 @@ const Subscribe = () => {
           <div>saasup@gmail.co</div>
         </div>
         <div className="bg-white p-5 rounded-2xl flex justify-between items-center gap-5 h-20 w-[100%] min-w-44 flex-grow shadow-lg shadow-white/20">
-          <div className="center text-black">
+          <div className="center text-black gap-3">
             <div className="bg-secondary p-3 rounded-xl mr-3">
-              <img src={phone} alt="" className="w-6 h-6"/>
+              <img src={phone} alt="" className="w-6 h-6" />
             </div>
             Call us
           </div>

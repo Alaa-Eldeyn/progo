@@ -4,6 +4,7 @@ import MiniTitle from "../MiniTitle";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import { toRight, toUp } from "../../utils/motionVariants";
+import { t } from "i18next";
 
 const Portfolio = () => {
   return (
@@ -35,8 +36,8 @@ const Portfolio = () => {
           href="#"
           className="text-3xl my-12 group text-secondary center"
         >
-          View all
-          <p className="soft ml-2 group-hover:translate-x-2">{`>>`}</p>
+          {t("View all")}
+          <p className="soft mx-2 group-hover:translate-x-2">{` >> `}</p>
         </motion.a>
       </div>
     </section>

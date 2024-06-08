@@ -3,6 +3,7 @@ import quote from "../../assets/quote.svg";
 import testo from "../../assets/Rectangle 65.png";
 import { motion } from "framer-motion";
 import { toRight, toDown, toUp } from "../../utils/motionVariants";
+import { t } from "i18next";
 
 const Reviews = () => {
   return (
@@ -14,7 +15,7 @@ const Reviews = () => {
           transition={{ delay: 0.4 }}
           className=" text-3xl mx-auto w-fit center gap-2"
         >
-          Some reviews of
+          {t("Some reviews of")}
           <div className="flex flex-col gap-1 mt-3">
             <span className=" w-10 bg-secondary h-[2px]"> </span>
             <span className=" w-10 bg-secondary h-[2px]"> </span>
@@ -33,7 +34,7 @@ const Reviews = () => {
             transition={{ delay: 0.2 }}
             className="-mt-[67px]"
           >
-            Our Clients.
+            {t("Our Clients.")}
           </motion.div>
         </div>
       </div>

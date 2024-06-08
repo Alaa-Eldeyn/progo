@@ -6,16 +6,18 @@ import Portfolio from "../../components/Home/Portfolio";
 import FAQ from "../../components/Home/FAQ";
 import Reviews from "../../components/Home/Reviews";
 import Contact from "../../components/Home/Contact";
+import { ScrollUp } from "../../components/ScrollUp";
 
 const HomePage = () => {
   return (
     <>
+      <ScrollUp />
       <Hero />
       <About />
       <Values />
       <Services />
       <Portfolio />
-      <FAQ bg={"bg-light"}/>
+      <FAQ bg={"bg-light"} />
       <Reviews />
       <Contact />
     </>

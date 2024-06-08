@@ -7,10 +7,12 @@ import {
 import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
 import { toUp } from "../../utils/motionVariants";
+import { t } from "i18next";
+
 const HeadLine = ({ title }) => {
   return (
     <div className="center gap-3 pb-5">
-      <div className="text-xl">{title}</div>
+      <div className="text-xl">{t(title)}</div>
       <hr className="bg-secondary h-1 w-1 border-none rounded-full flex-grow" />
       <hr className="bg-secondary h-1 w-10 border-none rounded-full " />
     </div>

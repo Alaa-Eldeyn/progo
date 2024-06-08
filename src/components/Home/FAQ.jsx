@@ -8,6 +8,7 @@ import {
 import { faq } from "../../data/data";
 import { motion } from "framer-motion";
 import { toRight, toUp } from "../../utils/motionVariants";
+import { t } from "i18next";
 
 function Icon({ id, open }) {
   return (
@@ -37,7 +38,7 @@ const FAQ = ({ bg }) => {
 
   return (
     <section className={`relative ${bg} min-h-[700px] overflow-hidden`}>
-      <div className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0`}>
+      <div className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0 -left-12`}>
         <img src={bg_hero} className={`h-full w-[90%] float-right`} alt="" />
       </div>
       <motion.div
@@ -48,10 +49,13 @@ const FAQ = ({ bg }) => {
         <div className=" text-center md:text-start">
           <p className="text-secondary 2xl:text-xl">FAQ</p>
           <h2 className="text-[40px] 2xl:text-[60px] font-bold leading-tight">
-            Frequently Asked <span className="text-secondary hidden md:block">Questions</span>{" "}
+            {t("Frequently Asked")}{" "}
+            <span className="text-secondary hidden md:block">
+              {t("Questions")}
+            </span>{" "}
           </h2>
           <h6 className="pt-2 text-sm 2xl:text-xl">
-            If you have any other questions, you can contact me by email
+            {t("If you have any other questions, you can contact me by email")}
           </h6>
         </div>
         <div className="soft md:max-w-[63%] min-h-[550px] 2xl:min-h-[650px]">
@@ -68,16 +72,16 @@ const FAQ = ({ bg }) => {
                   key={index}
                   open={open === index + 1}
                   icon={<Icon id={index + 1} open={open} />}
-                  className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 py-3  2xl:py-5  text-start"
+                  className="bg-white shadow-md rounded-lg mb-4 text-primary px-6 py-3 2xl:py-5 text-start"
                 >
                   <AccordionHeader
                     onClick={() => handleOpen(index + 1)}
                     className="text-md 2xl:text-2xl font-extrabold"
                   >
-                    {item.question}
+                    {t(item.question)}
                   </AccordionHeader>
                   <AccordionBody className="text-justify text-sm pt-3 2xl:text-lg">
-                    {item.answer}
+                    {t(item.answer)}
                   </AccordionBody>
                 </Accordion>
               </motion.div>

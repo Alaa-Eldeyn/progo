@@ -10,7 +10,7 @@ const AboutHero = () => {
   return (
     <section className="relative overflow-hidden min-h-[700px] 2xl:min-h-[800px] mt-20">
       <div
-        className={`absolute top-[20%] -translate-y-1/2 max-w-[1200px] max-h-[600px] opacity-10 right-0`}
+        className={`absolute top-[20%] -translate-y-1/2 max-w-[1200px] max-h-[600px] opacity-10 right-0 z-0`}
       >
         <img
           src={bg_hero}
@@ -23,15 +23,15 @@ const AboutHero = () => {
           <motion.div
             initial={toRight.hidden}
             animate={toRight.visible}
-            className="flex flex-col text-start md:max-w-[500px] 2xl:max-w-[700px] md:w-1/2 text-3xl 2xl:text-[40px]"
+            className="flex flex-col text-start md:max-w-[500px] 2xl:max-w-[600px] md:w-1/2 text-3xl 2xl:text-[40px] z-10"
           >
             <h2 className="pb-2 flex gap-3">
               {t("Welcome")} <img src={bye} alt="" />
             </h2>
             <p className="md:leading-snug text-[25px]">
-              <span className="text-secondary">{t("Everything ")}</span>
+              <span className="text-secondary">{t("Everything")} </span>
               {t(`we do we are challenging ourselves to have something new,`)}
-              <span className="text-secondary">{t(" something useful")}</span>
+              <span className="text-secondary"> {t("something useful")}</span>
             </p>
             <hr className="mt-5 w-64 border-none h-[2px] bg-white rounded-full" />
             <p className="pt-5 text-[16px] md:leading-loose text-justify text-gray-400">

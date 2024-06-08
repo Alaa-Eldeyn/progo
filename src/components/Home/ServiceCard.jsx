@@ -1,3 +1,4 @@
+import { t } from "i18next";
 
 const ServiceCard = ({ icon, service }) => {
   return (
@@ -7,7 +8,7 @@ const ServiceCard = ({ icon, service }) => {
           <img src={icon} alt="" className="w-10 h-10" />
         </div>
         <p className="mt-10 font-bold text-lg 2xl:text-2xl group-hover:tracking-wider soft">
-          {service}
+          {t(service)}
         </p>
       </div>
     </>

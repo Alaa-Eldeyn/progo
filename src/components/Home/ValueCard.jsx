@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 const ValueCard = ({ icon, title, description }) => {
   return (
     <>
@@ -6,8 +8,10 @@ const ValueCard = ({ icon, title, description }) => {
           <img src={icon} alt="Icon" className="w-16 h-16 md:w-14 md:h-14" />
         </div>
         <div className="text-start">
-          <h4 className="text-xl 2xl:text-2xl font-bold">{title}</h4>
-          <p className="mt-2 text-sm md:text-lg text-[#797979]">{description}</p>
+          <h4 className="text-xl 2xl:text-2xl font-bold">{t(title)}</h4>
+          <p className="mt-2 text-sm md:text-lg text-[#797979]">
+            {t(description)}
+          </p>
         </div>
       </div>
     </>
