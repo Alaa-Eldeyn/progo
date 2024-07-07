@@ -21,7 +21,9 @@ const Contact = () => {
           <h2 className="text-3xl font-bold mt-10">{t("Contact Us")}</h2>
           <hr className=" bg-secondary h-1 mt-2 rounded max-w-20  border-none " />
           <div className="mt-5 text-2xl text-gray-500">
-            {t("Feel free to contact us any time, we will get back to you as soon as we can!")}
+            {t(
+              "Feel free to contact us any time, we will get back to you as soon as we can!"
+            )}
           </div>
           <form className="mt-10 flex flex-col gap-10">
             <div className="relative h-11 w-full min-w-[200px] ">
@@ -74,19 +76,23 @@ const Contact = () => {
                   <div>
                     <img src={mail} alt="" className="w-8 h-8" />
                   </div>
-                  <p>progodesign.eg@gmail.com</p>
+                  <a href="mailto:progosoft.info@gmail.com" target="_blank">
+                    progosoft.info@gmail.com
+                  </a>
                 </div>
                 <div className="center gap-4">
                   <div>
                     <img src={phone} alt="" className="w-8 h-8" />
                   </div>
-                  <p>+20 0112 003 0082</p>
+                  <a href="http://wa.me/+201099402670" target="_blank">
+                    +20 0112 003 0082
+                  </a>
                 </div>
                 <div className="center gap-4">
                   <div>
                     <img src={location} alt="" className="w-8 h-8" />
                   </div>
-                  <p>Nasr city</p>
+                  <p>{t("Eldoqi - Hadaiq Elahram")}</p>
                 </div>
                 <div className="center gap-4">
                   <div>

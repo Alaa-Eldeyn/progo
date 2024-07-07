@@ -17,33 +17,19 @@ import srv6 from "../assets/motion-graphics.svg";
 import srv7 from "../assets/social-media.svg";
 import srv8 from "../assets/seo.svg";
 
-import project1 from "../assets/Hi Community Cover.jpg";
-import project2 from "../assets/APPCover.jpg";
-import project3 from "../assets/sega.jpeg";
-
 import graphicService1 from "../assets/services/vector (1).png";
 import graphicService1H from "../assets/services/vector (2).png";
 import graphicService2 from "../assets/services/branding (5).png";
-import graphicService2H from "../assets/services/branding (6).png";
 import graphicService3 from "../assets/services/idea (2).png";
-import graphicService3H from "../assets/services/idea (3).png";
 import graphicService4 from "../assets/services/id-card (3).png";
-import graphicService4H from "../assets/services/id-card (4).png";
 import graphicService5 from "../assets/services/brochure (2).png";
-import graphicService5H from "../assets/services/brochure (3).png";
 import graphicService6 from "../assets/services/packaging-design (1).png";
-import graphicService6H from "../assets/services/packaging-design (2).png";
 import graphicService7 from "../assets/services/rollup (2).png";
-import graphicService7H from "../assets/services/rollup (3).png";
 import graphicService8 from "../assets/services/brand-identity (1).png";
-import graphicService8H from "../assets/services/brand-identity (2).png";
 import graphicService9 from "../assets/services/Code_perspective_matte-11.svg";
 import graphicService10 from "../assets/services/motion-graphics (2).png";
-import graphicService10H from "../assets/services/motion-graphics (3).png";
 import graphicService11 from "../assets/services/social-media-marketing (2).png";
-import graphicService11h from "../assets/services/social-media-marketing (3).png";
 import graphicService12 from "../assets/services/digital-printing (1).png";
-import graphicService12H from "../assets/services/digital-printing (2).png";
 
 import uiUxService1 from "../assets/services/Code_perspective_matte-12.svg";
 import uiUxService2 from "../assets/services/Code_perspective_matte-13.svg";
@@ -75,6 +61,41 @@ import subscribe1 from "../assets/services/Group 1793.svg";
 import subscribe2 from "../assets/services/Group 1796.svg";
 import subscribe3 from "../assets/services/Group 1799.svg";
 import subscribe4 from "../assets/services/Group 1799.svg";
+
+import project1 from "../assets/projects/HR system Co.jpg";
+import project1_full from "../assets/projects/HR system.jpg";
+import project2 from "../assets/projects/Dashboard  co.jpg";
+import project2_full from "../assets/projects/Dashboard  LibyaZon.jpg";
+import project3 from "../assets/projects/Coverlibya.jpg";
+import project3_full from "../assets/projects/LibyaZon.jpg";
+import project4 from "../assets/projects/cover Alarm  - Pharmacies system.jpg";
+import project4_full from "../assets/projects/Alarm  - Pharmacies system.jpg";
+import project5 from "../assets/projects/Hi Community cover.jpg";
+import project5_full from "../assets/projects/Hi Community.jpg";
+import project6 from "../assets/projects/APP C.jpg";
+import project6_full from "../assets/projects/APP.jpg";
+import project7 from "../assets/projects/Coverlibya 89.jpg";
+import project7_full from "../assets/projects/Suq  Aljameuh APP.jpg";
+import project8 from "../assets/projects/suq aljameuh Dashboard.jpg";
+import project8_full from "../assets/projects/Dashboard Suq  Aljameuh.jpg";
+import project9 from "../assets/projects/Restaurant Website C.jpg";
+import project9_full from "../assets/projects/Restaurant Website.jpg";
+import project10 from "../assets/projects/Medical Site C.jpg";
+import project10_full from "../assets/projects/Medical Site.jpg";
+import project11 from "../assets/projects/Medical valley c.jpg";
+import project11_full from "../assets/projects/Medical valley.jpg";
+import project12 from "../assets/projects/Savory Kitche.jpg";
+import project12_full from "../assets/projects/Logo Savory Kitchen.jpg";
+import project13 from "../assets/projects/logo hi.jpg";
+import project13_full from "../assets/projects/Hi Community logo.jpg";
+import project14 from "../assets/projects/1.jpg";
+import project14_full from "../assets/projects/LibyaZone - Logo.jpg";
+import project15 from "../assets/projects/Ismaily cover.jpg";
+import project15_full from "../assets/projects/Ismaily.jpg";
+import project16 from "../assets/projects/Doctor C.jpg";
+import project16_full from "../assets/projects/Logo Doctor.jpg";
+import project17 from "../assets/projects/Desktop - 1.jpg";
+import project17_full from "../assets/projects/Desktop - 31.jpg";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -190,39 +211,122 @@ const servicesCards = [
 const projectCards = [
   {
     id: 1,
-    title: "Hi Community!",
-    description: "Development & UI/UX Design & SEO",
+    title: "Dashboard - HR system",
+    description: "Development & UI/UX Design",
     image: project1,
+    fullImg: project1_full,
   },
   {
     id: 2,
-    title: "Hi Community!",
-    description: "Development & UI/UX Design & SEO",
+    title: "Dashboard - LibyaZon",
+    description: "Development & UI/UX Design",
     image: project2,
+    fullImg: project2_full,
   },
   {
     id: 3,
-    title: "Hi Community!",
+    title: "E-commerce - LibyaZon",
     description: "Development & UI/UX Design & SEO",
     image: project3,
+    fullImg: project3_full,
   },
   {
     id: 4,
-    title: "Hi Community!",
-    description: "Development & UI/UX Design & SEO",
-    image: project1,
+    title: "Dashboard - Pharmacies system",
+    description: "Development & UI/UX Design",
+    image: project4,
+    fullImg: project4_full,
   },
   {
     id: 5,
-    title: "Hi Community!",
+    title: "Social Network - Hi Community",
     description: "Development & UI/UX Design & SEO",
-    image: project2,
+    image: project5,
+    fullImg: project5_full,
   },
   {
     id: 6,
-    title: "Hi Community!",
+    title: "Restaurant Application",
+    description: "Development & UI/UX Design",
+    image: project6,
+    fullImg: project6_full,
+  },
+  {
+    id: 7,
+    title: "E-commerce - Suq Aljameuh App",
+    description: "Development & UI/UX Design",
+    image: project7,
+    fullImg: project7_full,
+  },
+  {
+    id: 8,
+    title: "Dashboard - Suq Aljameuh",
+    description: "Development & UI/UX Design",
+    image: project8,
+    fullImg: project8_full,
+  },
+  {
+    id: 9,
+    title: "Restaurant - web application",
     description: "Development & UI/UX Design & SEO",
-    image: project3,
+    image: project9,
+    fullImg: project9_full,
+  },
+  {
+    id: 10,
+    title: "Medical Site",
+    description: "Development & UI/UX Design & SEO",
+    image: project10,
+    fullImg: project10_full,
+  },
+  {
+    id: 11,
+    title: "Medical Valley - App",
+    description: "Development & UI/UX Design",
+    image: project11,
+    fullImg: project11_full,
+  },
+  {
+    id: 12,
+    title: "Logo - Savory Kitchen",
+    description: "Design",
+    image: project12,
+    fullImg: project12_full,
+  },
+  {
+    id: 13,
+    title: "Logo - Hi Community",
+    description: "Design",
+    image: project13,
+    fullImg: project13_full,
+  },
+  {
+    id: 14,
+    title: "Logo - LibyaZone",
+    description: "Design",
+    image: project14,
+    fullImg: project14_full,
+  },
+  {
+    id: 15,
+    title: "Logo - Ismaily Sc.",
+    description: "Re-Design",
+    image: project15,
+    fullImg: project15_full,
+  },
+  {
+    id: 16,
+    title: "Logo - Doctor App",
+    description: "Design",
+    image: project16,
+    fullImg: project16_full,
+  },
+  {
+    id: 17,
+    title: "Profile Company",
+    description: "Progo software",
+    image: project17,
+    fullImg: project17_full,
   },
 ];
 const faq = [
@@ -237,32 +341,40 @@ const faq = [
     id: 2,
     question: "Can we get the software quickly?",
     answer:
-      "Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support",
+      "Yes, you can get your software quickly. Depending on the project's size, we can deliver the Minimum Viable Product (MVP) within a timeframe ranging from one month to four months. Get in touch with us, and we'll meet your needs with professionalism and precision.",
   },
   {
     id: 3,
     question: "What is the cost of software development?",
     answer:
-      "Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support",
+      "The costs of developing medium to large-scale software applications typically range from $2,000 to $15,000 USD. The total cost primarily depends on the number of software features and their complexity, the number of supported core systems (web, mobile, desktop), and the type of development (custom development, low-code development, platform-based development). Additionally, the uniqueness and complexity of user interface design, the number of software integration processes, as well as requirements for availability, security, and performance, also play a significant role in determining the development cost. You can request a project cost estimate for free from Progo or learn more details about software development costs in our recently published guide.",
   },
   {
     id: 4,
     question: "What are your policies for post-launch?",
     answer:
-      "Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support",
+      "During the first 3 months after software deployment, our team does the following: Responds to your inquiries and user questions, and resolves any user issues (if any). Provides support related to incident management, configuration changes, and updates. After the initial 3-month period, and upon agreement, we offer continuous maintenance and upgrades for your software, in addition to providing on-demand support from Level 1 to Level 3. We have extensive experience in fostering long-term partnerships and ensuring our clients' long-term satisfaction.",
   },
   {
     id: 5,
     question: "How do you ensure the quality of the software you provide?",
-    answer:
-      "Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support",
+    answer: `We ensure the quality of the software we provide through several measures and practices, including:
+
+Adherence to standard development practices: We adhere to international development standards and best practices in the software development industry.
+Quality testing: We conduct comprehensive software testing using a variety of software testing techniques to ensure its correct performance according to the required specifications.
+Code review: Our team regularly reviews the written code to ensure its quality and compliance with best practices and standards.
+Adoption of the development lifecycle: We follow regular and organized development processes and establish clear plans for project management and monitoring.
+Continuous improvement: We continue to provide continuous improvements to the software based on customer feedback and user experiences.
+Commitment to security: We ensure the security of the software through secure development practices and continuous security testing.
+
+Through these measures and practices, we strive to deliver high-quality software that meets the needs of our customers and exceeds their expectations.`,
   },
   {
     id: 6,
     question:
       "What is the average time required to create a complete profile for my company?",
     answer:
-      "Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support",
+      "The average time required to create your profile depends on several factors, including the size of your company and the specific market requirements relevant to your business. We provide detailed estimates based on initial consultation with our clients.",
   },
 ];
 const graphicServices = [
@@ -557,21 +669,59 @@ const portfolioProjects = [
     projects: [
       {
         id: 1,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
+        title: "Dashboard - HR system",
+        description: "Development & UI/UX Design",
         image: project1,
+        fullImg: project1_full,
       },
       {
         id: 2,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
+        title: "Dashboard - LibyaZon",
+        description: "Development & UI/UX Design",
         image: project2,
+        fullImg: project2_full,
       },
       {
         id: 3,
-        title: "Hi Community!",
+        title: "E-commerce - LibyaZon",
         description: "Development & UI/UX Design & SEO",
         image: project3,
+        fullImg: project3_full,
+      },
+      {
+        id: 4,
+        title: "Dashboard - Pharmacies system",
+        description: "Development & UI/UX Design",
+        image: project4,
+        fullImg: project4_full,
+      },
+      {
+        id: 5,
+        title: "Social Network - Hi Community",
+        description: "Development & UI/UX Design & SEO",
+        image: project5,
+        fullImg: project5_full,
+      },
+      {
+        id: 8,
+        title: "Dashboard - Suq Aljameuh",
+        description: "Development & UI/UX Design",
+        image: project8,
+        fullImg: project8_full,
+      },
+      {
+        id: 9,
+        title: "Restaurant - web application",
+        description: "Development & UI/UX Design & SEO",
+        image: project9,
+        fullImg: project9_full,
+      },
+      {
+        id: 10,
+        title: "Medical Site",
+        description: "Development & UI/UX Design & SEO",
+        image: project10,
+        fullImg: project10_full,
       },
     ],
   },
@@ -580,22 +730,32 @@ const portfolioProjects = [
     value: "mobile",
     projects: [
       {
-        id: 1,
-        title: "Hi Community!",
+        id: 3,
+        title: "E-commerce - LibyaZon",
         description: "Development & UI/UX Design & SEO",
         image: project3,
+        fullImg: project3_full,
       },
       {
-        id: 2,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project2,
+        id: 6,
+        title: "Restaurant Application",
+        description: "Development & UI/UX Design",
+        image: project6,
+        fullImg: project6_full,
       },
       {
-        id: 3,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project1,
+        id: 7,
+        title: "E-commerce - Suq Aljameuh App",
+        description: "Development & UI/UX Design",
+        image: project7,
+        fullImg: project7_full,
+      },
+      {
+        id: 11,
+        title: "Medical Valley - App",
+        description: "Development & UI/UX Design",
+        image: project11,
+        fullImg: project11_full,
       },
     ],
   },
@@ -604,55 +764,54 @@ const portfolioProjects = [
     value: "graphic",
     projects: [
       {
-        id: 1,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project1,
+        id: 12,
+        title: "Logo - Savory Kitchen",
+        description: "Design",
+        image: project12,
+        fullImg: project12_full,
       },
       {
-        id: 2,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project2,
+        id: 13,
+        title: "Logo - Hi Community",
+        description: "Design",
+        image: project13,
+        fullImg: project13_full,
       },
       {
-        id: 3,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project3,
+        id: 14,
+        title: "Logo - LibyaZone",
+        description: "Design",
+        image: project14,
+        fullImg: project14_full,
+      },
+      {
+        id: 15,
+        title: "Logo - Ismaily Sc.",
+        description: "Re-Design",
+        image: project15,
+        fullImg: project15_full,
+      },
+      {
+        id: 16,
+        title: "Logo - Doctor App",
+        description: "Design",
+        image: project16,
+        fullImg: project16_full,
+      },
+      {
+        id: 17,
+        title: "Profile Company",
+        description: "Progo software",
+        image: project17,
+        fullImg: project17_full,
       },
     ],
   },
-  {
-    label: "Video Design",
-    value: "video",
-    projects: [
-      {
-        id: 1,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project3,
-      },
-      {
-        id: 2,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project2,
-      },
-      {
-        id: 3,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project1,
-      },
-      {
-        id: 4,
-        title: "Hi Community!",
-        description: "Development & UI/UX Design & SEO",
-        image: project1,
-      },
-    ],
-  },
+  // {
+  //   label: "Video Design",
+  //   value: "video",
+  //   projects: [],
+  // },
 ];
 const aboutGoals = [
   {

@@ -66,29 +66,31 @@ const AllTaps = () => {
               key={value}
               value={value}
             >
-              {projects.map(({ id, title, description, image }, index) => (
-                <motion.div
-                  initial={toUp.hidden}
-                  animate={toUp.visible}
-                  transition={{ delay: 0.1 * index }}
-                  key={index}
-                  className="cursor-pointer"
-                  onClick={() => {
-                    handleOpen();
-                    setTitle(title);
-                    setDescription(description);
-                    setDialogImg(image);
-                  }}
-                >
-                  <ProjectCard
-                    key={id}
-                    title={title}
-                    description={description}
-                    image={image}
-                    bg={"bg-primary"}
-                  />
-                </motion.div>
-              ))}
+              {projects.map(
+                ({ id, title, description, image, fullImg }, index) => (
+                  <motion.div
+                    initial={toUp.hidden}
+                    animate={toUp.visible}
+                    transition={{ delay: 0.1 * index }}
+                    key={index}
+                    className="cursor-pointer"
+                    onClick={() => {
+                      setTitle(title);
+                      setDescription(description);
+                      setDialogImg(fullImg);
+                      handleOpen();
+                    }}
+                  >
+                    <ProjectCard
+                      key={id}
+                      title={title}
+                      description={description}
+                      image={image}
+                      bg={"bg-primary"}
+                    />
+                  </motion.div>
+                )
+              )}
             </TabPanel>
           ))}
         </TabsBody>

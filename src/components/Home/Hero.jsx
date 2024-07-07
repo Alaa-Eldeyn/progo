@@ -7,9 +7,9 @@ import { toRight, toLeft } from "../../utils/motionVariants";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden md:min-h-[700px] 2xl:min-h-[800px] mt-20">
+    <section className="relative overflow-hidden md:min-h-[700px] 2xl:min-h-[770px] mt-20">
       <div
-        className={`absolute sm:top-[20%] top-[70%] -translate-y-1/2 max-w-[1200px] max-h-[600px] opacity-10 right-0`}
+        className={`absolute sm:top-[20%] top-[70%] -translate-y-1/2 max-w-[1300px] max-h-[600px] opacity-10 right-0`}
       >
         <img
           src={bg_hero}
