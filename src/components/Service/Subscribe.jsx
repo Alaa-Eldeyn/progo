@@ -1,10 +1,9 @@
 import { subscribeData } from "../../data/data";
-import phone from "../../assets/services/phone.svg";
 import { t } from "i18next";
 const Subscribe = () => {
   return (
     <div className="relative">
-      <div className="center pt-10 md:pt-24 pb-20 md:pb-44">
+      <div className="center pt-10 md:pt-24 pb-20">
         <div className="flex gap-16 flex-col items-center md:flex-row text-start max-w-[1100px]">
           <div>
             <div className="text-justify md:max-w-[350px]">
@@ -67,34 +66,6 @@ const Subscribe = () => {
               ))}
             </div>
           </div>
-        </div>
-      </div>
-      <div className="w-full md:max-w-[800px] text-gray-700 mx-auto center flex-col !hidden md:!flex md:flex-row gap-5 absolute -bottom-10 left-1/2 -translate-x-1/2 z-10">
-        <div className="bg-white p-5 rounded-2xl flex justify-between items-center gap-5 h-20 w-[100%] min-w-44 flex-grow shadow-lg shadow-white/20">
-          <div className="center text-black gap-3">
-            <div className="bg-secondary p-3 rounded-xl mr-3">
-              <svg
-                className="w-8 h-8 text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-              </svg>
-            </div>
-            Mail us
-          </div>
-          <div>saasup@gmail.co</div>
-        </div>
-        <div className="bg-white p-5 rounded-2xl flex justify-between items-center gap-5 h-20 w-[100%] min-w-44 flex-grow shadow-lg shadow-white/20">
-          <div className="center text-black gap-3">
-            <div className="bg-secondary p-3 rounded-xl mr-3">
-              <img src={phone} alt="" className="w-6 h-6" />
-            </div>
-            Call us
-          </div>
-          <div>+001 6547 6589</div>
         </div>
       </div>
     </div>

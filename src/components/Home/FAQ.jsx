@@ -8,7 +8,7 @@ import {
 import { faq } from "../../data/data";
 import { motion } from "framer-motion";
 import { toRight, toUp } from "../../utils/motionVariants";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 function Icon({ id, open }) {
   return (
@@ -33,6 +33,7 @@ function Icon({ id, open }) {
 
 const FAQ = ({ bg }) => {
   const [open, setOpen] = useState(1);
+  const { t } = useTranslation();
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 

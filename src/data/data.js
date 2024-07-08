@@ -31,31 +31,31 @@ import graphicService10 from "../assets/services/motion-graphics (2).png";
 import graphicService11 from "../assets/services/social-media-marketing (2).png";
 import graphicService12 from "../assets/services/digital-printing (1).png";
 
-import uiUxService1 from "../assets/services/Code_perspective_matte-12.svg";
-import uiUxService2 from "../assets/services/Code_perspective_matte-13.svg";
-import uiUxService3 from "../assets/services/Code_perspective_matte-14.svg";
+import uiUxService1 from "../assets/services/ui-design.svg";
+import uiUxService2 from "../assets/services/Code_perspective_matte-22.svg";
+import uiUxService3 from "../assets/services/Code_perspective_matte-28.svg";
 
-import devService1 from "../assets/services/Code_perspective_matte-15.svg";
-import devService2 from "../assets/services/Code_perspective_matte-16.svg";
-import devService3 from "../assets/services/Code_perspective_matte-17.svg";
-import devService4 from "../assets/services/Code_perspective_matte-18.svg";
-import devService5 from "../assets/services/Code_perspective_matte-19.svg";
-import devService6 from "../assets/services/Code_perspective_matte-20.svg";
+import devService1 from "../assets/services/Code_perspective_matte-26.svg";
+import devService2 from "../assets/services/Code_perspective_matte-23.svg";
+import devService3 from "../assets/services/Code_perspective_matte-29.svg";
+import devService4 from "../assets/services/Code_perspective_matte-31.svg";
+import devService5 from "../assets/services/Code_perspective_matte-30.svg";
+import devService6 from "../assets/services/Code_perspective_matte-32.svg";
 
-import digitalService1 from "../assets/services/Code_perspective_matte-21.svg";
-import digitalService2 from "../assets/services/Code_perspective_matte-22.svg";
-import digitalService3 from "../assets/services/Code_perspective_matte-23.svg";
-import digitalService4 from "../assets/services/Code_perspective_matte-24.svg";
-import digitalService5 from "../assets/services/Code_perspective_matte-25.svg";
-import digitalService6 from "../assets/services/Code_perspective_matte-26.svg";
-import digitalService7 from "../assets/services/Code_perspective_matte-27.svg";
-import digitalService8 from "../assets/services/Code_perspective_matte-28.svg";
-import digitalService9 from "../assets/services/Code_perspective_matte-29.svg";
-import digitalService10 from "../assets/services/Code_perspective_matte-30.svg";
-import digitalService11 from "../assets/services/Code_perspective_matte-31.svg";
-import digitalService12 from "../assets/services/Code_perspective_matte-32.svg";
-import digitalService13 from "../assets/services/Code_perspective_matte-33.svg";
-import digitalService14 from "../assets/services/Code_perspective_matte-34.svg";
+import digitalService1 from "../assets/services/Code_perspective_matte-27.svg";
+import digitalService2 from "../assets/services/Code_perspective_matte-24.svg";
+import digitalService3 from "../assets/services/Code_perspective_matte-33.svg";
+import digitalService4 from "../assets/services/Code_perspective_matte-34.svg";
+import digitalService5 from "../assets/services/Code_perspective_matte-134.svg";
+import digitalService6 from "../assets/services/Code_perspective_matte-44.svg";
+import digitalService7 from "../assets/services/Code_perspective_matte-254.svg";
+import digitalService8 from "../assets/services/Code_perspective_matte-35.svg";
+import digitalService9 from "../assets/services/Code_perspective_matte-37.svg";
+import digitalService10 from "../assets/services/Code_perspective_matte-36.svg";
+import digitalService11 from "../assets/services/Code_perspective_matte-40.svg";
+import digitalService12 from "../assets/services/Code_perspective_matte-41.svg";
+import digitalService13 from "../assets/services/Code_perspective_matte-38.svg";
+import digitalService14 from "../assets/services/Code_perspective_matte-39.svg";
 
 import subscribe1 from "../assets/services/Group 1793.svg";
 import subscribe2 from "../assets/services/Group 1796.svg";
@@ -354,46 +354,33 @@ const faq = [
     id: 1,
     question:
       "Can you cover the software development process from start to finish?",
-    answer: `<p class="leading-relaxed">Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support</p>`,
+    answer: `Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support`,
   },
   {
     id: 2,
     question: "Can we get the software quickly?",
-    answer: `<p class="leading-relaxed">Yes, you can get your software quickly. Depending on the project's size, we can deliver the Minimum Viable Product (MVP) within a timeframe ranging from one month to four months. Get in touch with us, and we'll meet your needs with professionalism and precision.</p>`,
+    answer: `Yes, you can get your software quickly. Depending on the project's size, we can deliver the Minimum Viable Product (MVP) within a timeframe ranging from one month to four months. Get in touch with us, and we'll meet your needs with professionalism and precision.`,
   },
   {
     id: 3,
     question: "What is the cost of software development?",
-    answer: `<p class="leading-relaxed">The costs of developing medium to large-scale software applications typically range from $2,000 to $15,000 USD. The total cost primarily depends on the number of software features and their complexity, the number of supported core systems (web, mobile, desktop), and the type of development (custom development, low-code development, platform-based development). Additionally, the uniqueness and complexity of user interface design, the number of software integration processes, as well as requirements for availability, security, and performance, also play a significant role in determining the development cost.<br> You can request a project cost estimate for free from Progo or learn more details about software development costs in our recently published guide.</p>`,
+    answer: `The costs of developing medium to large-scale software applications typically range from $2,000 to $15,000 USD. The total cost primarily depends on the number of software features and their complexity, the number of supported core systems (web, mobile, desktop), and the type of development (custom development, low-code development, platform-based development). Additionally, the uniqueness and complexity of user interface design, the number of software integration processes, as well as requirements for availability, security, and performance, also play a significant role in determining the development cost.<br> You can request a project cost estimate for free from Progo or learn more details about software development costs in our recently published guide.`,
   },
   {
     id: 4,
     question: "What are your policies for post-launch?",
-    answer: `<p class="leading-relaxed">During the first 3 months after software deployment, our team does the following:<br>
-Responds to your inquiries and user questions, and resolves any user issues (if any).<br>
-Provides support related to incident management, configuration changes, and updates. After the initial 3-month period, and upon agreement, we offer continuous maintenance and upgrades for your software, in addition to providing on-demand support from Level 1 to Level 3. We have extensive experience in fostering long-term partnerships and ensuring our clients' long-term satisfaction.</p>`,
+    answer: `During the first 3 months after software deployment, our team does the following:<br>Responds to your inquiries and user questions, and resolves any user issues (if any).<br>Provides support related to incident management, configuration changes, and updates. After the initial 3-month period, and upon agreement, we offer continuous maintenance and upgrades for your software, in addition to providing on-demand support from Level 1 to Level 3. We have extensive experience in fostering long-term partnerships and ensuring our clients' long-term satisfaction.`,
   },
   {
     id: 5,
     question: "How do you ensure the quality of the software you provide?",
-    answer: `<h1 class="leading-loose">Ensuring the Quality of Our Software</h1>
-    <p class="leading-loose">We ensure the quality of the software we provide through several measures and practices, including:</p>
-    <ul class="discList leading-loose">
-        <li class="mx-10"><strong>Adherence to standard development practices:</strong> We adhere to international development standards and best practices in the software development industry.</li>
-        <li class="mx-10"><strong>Quality testing:</strong> We conduct comprehensive software testing using a variety of software testing techniques to ensure its correct performance according to the required specifications.</li>
-        <li class="mx-10"><strong>Code review:</strong> Our team regularly reviews the written code to ensure its quality and compliance with best practices and standards.</li>
-        <li class="mx-10"><strong>Adoption of the development lifecycle:</strong> We follow regular and organized development processes and establish clear plans for project management and monitoring.</li>
-        <li class="mx-10"><strong>Continuous improvement:</strong> We continue to provide continuous improvements to the software based on customer feedback and user experiences.</li>
-        <li class="mx-10"><strong>Commitment to security:</strong> We ensure the security of the software through secure development practices and continuous security testing.</li>
-    </ul>
-    <p class="leading-loose">Through these measures and practices, we strive to deliver high-quality software that meets the needs of our customers and exceeds their expectations.</p>
-`,
+    answer: `Ensuring the Quality of Our Software We ensure the quality of the software we provide through several measures and practices, including:<li><strong>Adherence to standard development practices:</strong> We adhere to international development standards and best practices in the software development industry.</li><li><strong>Quality testing:</strong> We conduct comprehensive software testing using a variety of software testing techniques to ensure its correct performance according to the required specifications.</li><li><strong>Code review:</strong> Our team regularly reviews the written code to ensure its quality and compliance with best practices and standards.</li><li><strong>Adoption of the development lifecycle:</strong> We follow regular and organized development processes and establish clear plans for project management and monitoring.</li><li><strong>Continuous improvement:</strong> We continue to provide continuous improvements to the software based on customer feedback and user experiences.</li><li><strong>Commitment to security:</strong> We ensure the security of the software through secure development practices and continuous security testing.</li>    Through these measures and practices, we strive to deliver high-quality software that meets the needs of our customers and exceeds their expectations.`,
   },
   {
     id: 6,
     question:
       "What is the average time required to create a complete profile for my company?",
-    answer: `<p class="leading-relaxed">The average time required to create your profile depends on several factors, including the size of your company and the specific market requirements relevant to your business. We provide detailed estimates based on initial consultation with our clients.</p>`,
+    answer: `The average time required to create your profile depends on several factors, including the size of your company and the specific market requirements relevant to your business. We provide detailed estimates based on initial consultation with our clients.`,
   },
 ];
 const graphicServices = [
@@ -409,186 +396,171 @@ const graphicServices = [
     id: 2,
     title: "Brand identity",
     description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+      "encompasses the visual, verbal, and emotional elements that a company uses to present itself to the world and distinguish itself from competitors. It includes the company's name, logo, colors, typography, imagery, messaging, and overall design style. A strong brand identity helps create a consistent and memorable impression, fosters customer recognition and loyalty, and communicates the company's values and personality.",
     icon: graphicService2,
   },
   {
     id: 3,
     title: "Creative camping",
     description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+      "is a strategic marketing effort that utilizes innovative and original ideas to promote a product, service, or brand. It involves the development and execution of creative concepts across various media channels, such as advertising, social media, content marketing, and experiential activations. The goal of a creative campaign is to capture the audience's attention, evoke emotion, drive engagement, and ultimately achieve the desired marketing objectives, whether it's increasing brand awareness, generating leads, boosting sales, or building brand loyalty.",
     icon: graphicService3,
   },
   {
     id: 4,
     title: "Business card",
     description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+      " is a small card typically made of paper or cardstock that contains essential contact information about an individual or a company. It often includes details such as the person's name, job title, company name, logo, phone number, email address, and physical address. Business cards serve as a convenient way for individuals to exchange contact information during professional interactions, networking events, or business meetings. They also help in establishing credibility, professionalism, and brand identity.",
     icon: graphicService4,
   },
   {
     id: 5,
     title: "Brochure - Flyer",
     description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+      "While both brochures and flyers serve as effective marketing tools, they differ in terms of format, content, and intended use. Brochures are more comprehensive and are designed to provide detailed information, while flyers are more concise and are aimed at quickly capturing attention and generating interest.",
     icon: graphicService5,
   },
   {
     id: 6,
     title: "Packaging design",
     description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+      "Packaging design refers to the creation of the exterior of a product's packaging, including the box, container, or wrapper, with the goal of attracting consumers and protecting the product. It involves a combination of graphic design, structural design, and branding elements to create packaging that is visually appealing, functional, and aligned with the brand identity.",
     icon: graphicService6,
   },
   {
     id: 7,
     title: "Roll Up Design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    description: `also known as a "roll-up banner" or "pull-up banner," refers to a portable display stand used for advertising or promotional purposes at events, trade shows, conferences, or retail locations. The design typically consists of a flexible banner material that rolls up into a compact base for easy transportation and storage.`,
     icon: graphicService7,
   },
   {
     id: 8,
     title: "Company identity design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    description: `also known as corporate identity design, is the visual representation of a company's brand across various touchpoints. It encompasses the visual elements and branding assets that help to establish and maintain the company's identity and differentiate it from competitors. Company identity design goes beyond just a logo; it includes the overall visual language, tone, and style that convey the company's personality, values, and mission to its target audience.`,
     icon: graphicService8,
   },
   {
     id: 9,
     title: "Event design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    description: `refers to the process of planning, organizing, and designing various aspects of an event to create a cohesive and engaging experience for attendees. This includes the overall theme, decor, layout, signage, lighting, audiovisual elements, and any other visual or experiential components that contribute to the atmosphere and ambiance of the event. Event design aims to capture the essence of the event's purpose or theme while ensuring functionality, aesthetics, and guest satisfaction. It involves collaboration with event planners, decorators, graphic designers, and other professionals to bring the vision to life and create memorable experiences for attendees.`,
     icon: graphicService9,
   },
   {
     id: 10,
     title: "Motion Graphic",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    description: `Motion graphics refer to animated graphic designs that combine text, images, and other visual elements to create engaging visual content. Unlike traditional static graphics, motion graphics incorporate movement, transitions, and effects to convey information, tell stories, or communicate messages in a dynamic and captivating way. Motion graphics can be used in various contexts, including video productions, presentations, advertisements, user interfaces, and online content. They are created using animation software and techniques such as keyframing, tweening, and masking to bring still images to life and enhance visual storytelling. Motion graphics are effective in grabbing viewers' attention, explaining complex concepts, and adding visual interest to multimedia projects.`,
     icon: graphicService10,
   },
   {
     id: 11,
     title: "Social Media Design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    description: `encompasses the creation of visual content and graphics tailored specifically for social media platforms. It involves designing images, videos, infographics, animations, and other multimedia elements to be shared on social media channels such as Facebook, Instagram, Twitter, LinkedIn, and Pinterest. Social media design aims to capture the attention of the target audience, communicate key messages, and promote engagement with the brand or content.`,
     icon: graphicService11,
   },
   {
     id: 12,
     title: "Printing design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    description: `also known as graphic design for print, involves creating visual materials intended for printing on physical media such as paper, cardboard, fabric, or plastic. This includes a wide range of materials such as business cards, brochures, flyers, posters, banners, packaging, labels, magazines, newspapers, and promotional materials.`,
     icon: graphicService12,
   },
 ];
 const uiUxServices = [
   {
     id: 1,
-    title: "UI/UX Design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "Application Design",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: uiUxService1,
   },
   {
     id: 2,
-    title: "Web Design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "Website Design",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: uiUxService2,
   },
   {
     id: 3,
-    title: "Mobile Design",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "Desktop Design",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: uiUxService3,
   },
 ];
 const devServices = [
   {
     id: 1,
-    title: "Web Development",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "App Development",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: devService1,
   },
   {
     id: 2,
-    title: "Mobile Development",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "Website Development",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: devService2,
   },
   {
     id: 3,
     title: "Desktop Development",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: devService3,
   },
   {
     id: 4,
-    title: "Software Development",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "ERP Systems",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: devService4,
   },
   {
     id: 5,
-    title: "E-commerce Development",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "CRM Systems",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: devService5,
   },
   {
     id: 6,
-    title: "CMS Development",
-    description:
-      "refers to the process of creating a visual symbol or graphic representation that uniquely identifies a company, brand, product, or service. It involves combining visual elements such as shapes, colors, fonts, and imagery to convey the essence of the brand and establish a recognizable identity.",
+    title: "POS Systems",
+    description: `A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.`,
     icon: devService6,
   },
 ];
 const digitalServices = [
   {
     id: 1,
-    title: "SEO",
+    title: "Business Branding",
     description:
       "SEO is the process of optimizing your website to get organic, or un-paid, traffic from the search engine results page. In other words, SEO involves making certain changes to your website design and content that make your site more attractive to a search engine.",
     icon: digitalService1,
   },
   {
     id: 2,
-    title: "Social Media Marketing",
+    title: "Strategy plan",
     description:
       "Social media marketing is the use of social media platforms to connect with your audience to build your brand, increase sales, and drive website traffic. This involves publishing great content on your social media profiles, listening to and engaging your followers, analyzing your results, and running social media advertisements.",
     icon: digitalService2,
   },
   {
     id: 3,
-    title: "Content Marketing",
+    title: "Marketing Plan",
     description:
       "Content marketing is a strategic marketing approach focused on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience — and, ultimately, to drive profitable customer action.",
     icon: digitalService3,
   },
   {
     id: 4,
-    title: "Email Marketing",
+    title: "Marketing Consulting",
     description:
       "Email marketing is the act of sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing.",
     icon: digitalService4,
   },
   {
     id: 5,
-    title: "PPC",
+    title: "Branded Content",
     description:
       "PPC stands for pay-per-click, a model of internet marketing in which advertisers pay a fee each time one of their ads is clicked. Essentially, it’s a way of buying visits to your site, rather than attempting to “earn” those visits organically.",
     icon: digitalService5,
   },
   {
     id: 6,
-    title: "Affiliate Marketing",
+    title: "Content Marketing",
     description:
       "Affiliate marketing is the process of earning a commission by promoting other people’s (or company’s) products. You find a product you like, promote it to others and earn a piece of the profit for each sale that you make.",
     icon: digitalService6,
@@ -602,49 +574,49 @@ const digitalServices = [
   },
   {
     id: 8,
-    title: "Online PR",
+    title: "Social media planning",
     description:
       "Online PR is the practice of securing earned online coverage with digital publications, blogs, and other content-based websites. It’s much like traditional PR, but in the online space.",
     icon: digitalService8,
   },
   {
     id: 9,
-    title: "SMM",
+    title: "Social media Management",
     description:
       "Social media marketing (SMM) is a form of internet marketing that involves creating and sharing content on social media networks in order to achieve your marketing and branding goals.",
     icon: digitalService9,
   },
   {
     id: 10,
-    title: "Email Marketing",
+    title: "Social media Moderating",
     description:
       "Email marketing is the act of sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing.",
     icon: digitalService10,
   },
   {
     id: 11,
-    title: "PPC",
+    title: "Marketing campaign",
     description:
       "PPC stands for pay-per-click, a model of internet marketing in which advertisers pay a fee each time one of their ads is clicked. Essentially, it’s a way of buying visits to your site, rather than attempting to “earn” those visits organically.",
     icon: digitalService11,
   },
   {
     id: 12,
-    title: "Affiliate Marketing",
+    title: "Content creation",
     description:
       "Affiliate marketing is the process of earning a commission by promoting other people’s (or company’s) products. You find a product you like, promote it to others and earn a piece of the profit for each sale that you make.",
     icon: digitalService12,
   },
   {
     id: 13,
-    title: "Influencer Marketing",
+    title: "Content planning & curation",
     description:
       "Influencer marketing is a type of social media marketing that uses endorsements and product mentions from influencers–individuals who have a dedicated social following and are viewed as experts within their niche.",
     icon: digitalService13,
   },
   {
     id: 14,
-    title: "Online PR",
+    title: "SEO Specialist",
     description:
       "Online PR is the practice of securing earned online coverage with digital publications, blogs, and other content-based websites. It’s much like traditional PR, but in the online space.",
     icon: digitalService14,
