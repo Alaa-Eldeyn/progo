@@ -79,15 +79,15 @@ import project7_full from "../assets/projects/Suq  Aljameuh APP.jpg";
 import project8 from "../assets/projects/suq aljameuh Dashboard.jpg";
 import project8_full from "../assets/projects/Dashboard Suq  Aljameuh.jpg";
 import project9 from "../assets/projects/Restaurant Website C.jpg";
-import project9_full from "../assets/projects/Restaurant Website.jpg";
+import project9_full from "../assets/projects/Restaurant Website.png";
 import project10 from "../assets/projects/Medical Site C.jpg";
-import project10_full from "../assets/projects/Medical Site.jpg";
+import project10_full from "../assets/projects/Medical Site.png";
 import project11 from "../assets/projects/Medical valley c.jpg";
 import project11_full from "../assets/projects/Medical valley.jpg";
 import project12 from "../assets/projects/Savory Kitche.jpg";
 import project12_full from "../assets/projects/Logo Savory Kitchen.jpg";
 import project13 from "../assets/projects/logo hi.jpg";
-import project13_full from "../assets/projects/Hi Community logo.jpg";
+import project13_full from "../assets/projects/Hi Community logo.png";
 import project14 from "../assets/projects/1.jpg";
 import project14_full from "../assets/projects/LibyaZone - Logo.jpg";
 import project15 from "../assets/projects/Ismaily cover.jpg";
@@ -96,6 +96,26 @@ import project16 from "../assets/projects/Doctor C.jpg";
 import project16_full from "../assets/projects/Logo Doctor.jpg";
 import project17 from "../assets/projects/Desktop - 1.jpg";
 import project17_full from "../assets/projects/Desktop - 31.jpg";
+
+import socialMedia1 from "../assets/social/1.jpg";
+import socialMedia2 from "../assets/social/2.jpg";
+import socialMedia3 from "../assets/social/3.jpg";
+import socialMedia4 from "../assets/social/4.jpg";
+import socialMedia5 from "../assets/social/5.jpg";
+import socialMedia6 from "../assets/social/6.jpg";
+import socialMedia7 from "../assets/social/7.jpg";
+import socialMedia8 from "../assets/social/8.jpg";
+import socialMedia9 from "../assets/social/9.jpg";
+import socialMedia10 from "../assets/social/10.jpg";
+import socialMedia11 from "../assets/social/11.jpg";
+import socialMedia12 from "../assets/social/12.jpg";
+import socialMedia13 from "../assets/social/13.jpg";
+import socialMedia14 from "../assets/social/14.jpg";
+import socialMedia15 from "../assets/social/15.jpg";
+
+import alarm from "../assets/testimonials/Rectangle 65.png";
+import libyaZone from "../assets/testimonials/Rectangle 65-1.png";
+import suq from "../assets/testimonials/Rectangle 65-2.png";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -334,47 +354,46 @@ const faq = [
     id: 1,
     question:
       "Can you cover the software development process from start to finish?",
-    answer:
-      "Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support",
+    answer: `<p class="leading-relaxed">Certainly! This is our core service. We are a specialized software design and development company, capable of providing end-to-end coverage of the software development process. We have a strong team of IT experts, including consultants, engineers, and developers, who are responsible for all aspects of software development, from gathering and deriving requirements to software design, programming, deployment, and support</p>`,
   },
   {
     id: 2,
     question: "Can we get the software quickly?",
-    answer:
-      "Yes, you can get your software quickly. Depending on the project's size, we can deliver the Minimum Viable Product (MVP) within a timeframe ranging from one month to four months. Get in touch with us, and we'll meet your needs with professionalism and precision.",
+    answer: `<p class="leading-relaxed">Yes, you can get your software quickly. Depending on the project's size, we can deliver the Minimum Viable Product (MVP) within a timeframe ranging from one month to four months. Get in touch with us, and we'll meet your needs with professionalism and precision.</p>`,
   },
   {
     id: 3,
     question: "What is the cost of software development?",
-    answer:
-      "The costs of developing medium to large-scale software applications typically range from $2,000 to $15,000 USD. The total cost primarily depends on the number of software features and their complexity, the number of supported core systems (web, mobile, desktop), and the type of development (custom development, low-code development, platform-based development). Additionally, the uniqueness and complexity of user interface design, the number of software integration processes, as well as requirements for availability, security, and performance, also play a significant role in determining the development cost. You can request a project cost estimate for free from Progo or learn more details about software development costs in our recently published guide.",
+    answer: `<p class="leading-relaxed">The costs of developing medium to large-scale software applications typically range from $2,000 to $15,000 USD. The total cost primarily depends on the number of software features and their complexity, the number of supported core systems (web, mobile, desktop), and the type of development (custom development, low-code development, platform-based development). Additionally, the uniqueness and complexity of user interface design, the number of software integration processes, as well as requirements for availability, security, and performance, also play a significant role in determining the development cost.<br> You can request a project cost estimate for free from Progo or learn more details about software development costs in our recently published guide.</p>`,
   },
   {
     id: 4,
     question: "What are your policies for post-launch?",
-    answer:
-      "During the first 3 months after software deployment, our team does the following: Responds to your inquiries and user questions, and resolves any user issues (if any). Provides support related to incident management, configuration changes, and updates. After the initial 3-month period, and upon agreement, we offer continuous maintenance and upgrades for your software, in addition to providing on-demand support from Level 1 to Level 3. We have extensive experience in fostering long-term partnerships and ensuring our clients' long-term satisfaction.",
+    answer: `<p class="leading-relaxed">During the first 3 months after software deployment, our team does the following:<br>
+Responds to your inquiries and user questions, and resolves any user issues (if any).<br>
+Provides support related to incident management, configuration changes, and updates. After the initial 3-month period, and upon agreement, we offer continuous maintenance and upgrades for your software, in addition to providing on-demand support from Level 1 to Level 3. We have extensive experience in fostering long-term partnerships and ensuring our clients' long-term satisfaction.</p>`,
   },
   {
     id: 5,
     question: "How do you ensure the quality of the software you provide?",
-    answer: `We ensure the quality of the software we provide through several measures and practices, including:
-
-Adherence to standard development practices: We adhere to international development standards and best practices in the software development industry.
-Quality testing: We conduct comprehensive software testing using a variety of software testing techniques to ensure its correct performance according to the required specifications.
-Code review: Our team regularly reviews the written code to ensure its quality and compliance with best practices and standards.
-Adoption of the development lifecycle: We follow regular and organized development processes and establish clear plans for project management and monitoring.
-Continuous improvement: We continue to provide continuous improvements to the software based on customer feedback and user experiences.
-Commitment to security: We ensure the security of the software through secure development practices and continuous security testing.
-
-Through these measures and practices, we strive to deliver high-quality software that meets the needs of our customers and exceeds their expectations.`,
+    answer: `<h1 class="leading-loose">Ensuring the Quality of Our Software</h1>
+    <p class="leading-loose">We ensure the quality of the software we provide through several measures and practices, including:</p>
+    <ul class="discList leading-loose">
+        <li class="mx-10"><strong>Adherence to standard development practices:</strong> We adhere to international development standards and best practices in the software development industry.</li>
+        <li class="mx-10"><strong>Quality testing:</strong> We conduct comprehensive software testing using a variety of software testing techniques to ensure its correct performance according to the required specifications.</li>
+        <li class="mx-10"><strong>Code review:</strong> Our team regularly reviews the written code to ensure its quality and compliance with best practices and standards.</li>
+        <li class="mx-10"><strong>Adoption of the development lifecycle:</strong> We follow regular and organized development processes and establish clear plans for project management and monitoring.</li>
+        <li class="mx-10"><strong>Continuous improvement:</strong> We continue to provide continuous improvements to the software based on customer feedback and user experiences.</li>
+        <li class="mx-10"><strong>Commitment to security:</strong> We ensure the security of the software through secure development practices and continuous security testing.</li>
+    </ul>
+    <p class="leading-loose">Through these measures and practices, we strive to deliver high-quality software that meets the needs of our customers and exceeds their expectations.</p>
+`,
   },
   {
     id: 6,
     question:
       "What is the average time required to create a complete profile for my company?",
-    answer:
-      "The average time required to create your profile depends on several factors, including the size of your company and the specific market requirements relevant to your business. We provide detailed estimates based on initial consultation with our clients.",
+    answer: `<p class="leading-relaxed">The average time required to create your profile depends on several factors, including the size of your company and the specific market requirements relevant to your business. We provide detailed estimates based on initial consultation with our clients.</p>`,
   },
 ];
 const graphicServices = [
@@ -805,6 +824,111 @@ const portfolioProjects = [
         image: project17,
         fullImg: project17_full,
       },
+      {
+        id: 18,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia1,
+        fullImg: socialMedia1,
+      },
+      {
+        id: 19,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia2,
+        fullImg: socialMedia2,
+      },
+      {
+        id: 20,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia3,
+        fullImg: socialMedia3,
+      },
+      {
+        id: 21,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia4,
+        fullImg: socialMedia4,
+      },
+      {
+        id: 22,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia5,
+        fullImg: socialMedia5,
+      },
+      {
+        id: 23,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia6,
+        fullImg: socialMedia6,
+      },
+      {
+        id: 24,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia7,
+        fullImg: socialMedia7,
+      },
+      {
+        id: 25,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia8,
+        fullImg: socialMedia8,
+      },
+      {
+        id: 25,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia9,
+        fullImg: socialMedia9,
+      },
+      {
+        id: 26,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia10,
+        fullImg: socialMedia10,
+      },
+      {
+        id: 27,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia11,
+        fullImg: socialMedia11,
+      },
+      {
+        id: 28,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia12,
+        fullImg: socialMedia12,
+      },
+      {
+        id: 29,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia13,
+        fullImg: socialMedia13,
+      },
+      {
+        id: 30,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia14,
+        fullImg: socialMedia14,
+      },
+      {
+        id: 31,
+        title: "SocialMedia design",
+        description: "Design",
+        image: socialMedia15,
+        fullImg: socialMedia15,
+      },
     ],
   },
   // {
@@ -833,6 +957,37 @@ const aboutGoals = [
       "We provide quality services in various fields, rest assured our services will fulfill your Requirements.",
   },
 ];
+const testimonials = [
+  {
+    id: 1,
+    name: "Duaa Abdullah",
+    position: "CEO founder",
+    projectName: "ALARM",
+    logo: alarm,
+    review:
+      "وعليكم السلام.. الشغل جداً رائعٌ يعطيكم العافية على تعاونكم معنا وتحملكم الردود المختصرة والمتأخرة، بس فعلياً كان عندنا شغل وتدريب فعذراً. بس فعلياً العمل جبر وأعجب الطاقم الإداري وأكيد بيننا تعاون دائم. هذا ثاني معرضٍ لنا وفي ثالث وبإذن الله بمشاركتكم.",
+  },
+  {
+    id: 2,
+    name: "Mohamed Ali",
+    position: "CEO founder & Owner",
+    projectName: "LibyaZone",
+    logo: libyaZone,
+    review: `الصراحة الخدمة كانت على مستوى عالي، الفريق كان محترف وخدوم، وما قصروا في أي حاجة. من أول ما تواصلنا معاهم وهم دايرين كل شي على أكمل وجه، من تصميم الموقع والتطبيق حتى التفاصيل الصغيرة في الداشبورد.
+الحاجة اللي عجبتنا واجدة هي كيف هم يتواصلوا معنا باستمرار ويردوا على كل استفساراتنا بسرعة وفعالية. الخدمة ما كانت بس مجرد تنفيذ المشروع، لكن حتى بعد ما خلصنا هم متواجدين لأي دعم نحتاجه.
+بالمختصر، اللي ديروه شركة PROGO كان فوق توقعاتنا، وإن شاء الله يكون بيننا تعاون مستمر في المستقبل. بارك الله فيكم على الخدمة الرائعة والمهنية العالية.`,
+  },
+  {
+    id: 3,
+    name: "MR/ AbdelRahman",
+    position: "CEO founder & Owner",
+    projectName: "suq aljameuh",
+    logo: suq,
+    review: `أحب أشكر شركة PROGO على مشروع "سوق الجامعة" اللي سووه لنا. المشروع كان عبارة عن متجر إلكتروني مشابه للسوق المفتوح، ومعاه داشبورد وتطبيق. الخدمة بصراحة كانت ممتازة والفريق كان متعاون ومحترف جدًا.
+من بداية المشروع، كانوا يسمعون لمتطلباتنا ويفهمون وش نحتاج بالضبط. التصميم كان رهيب والتطبيق سهل الاستخدام. الشي اللي حمسنا أكثر هو الدعم المستمر من الفريق حتى بعد تسليم المشروع.
+شغلهم كان على مستوى عالي من الجودة والإتقان، وأكيد بنستمر نتعامل معهم في مشاريعنا القادمة. الله يعطيهم العافية وما قصّروا.`,
+  },
+];
 
 export {
   navItems,
@@ -848,4 +1003,5 @@ export {
   subscribeData,
   portfolioProjects,
   aboutGoals,
+  testimonials,
 };

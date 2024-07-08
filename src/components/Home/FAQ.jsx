@@ -38,7 +38,9 @@ const FAQ = ({ bg }) => {
 
   return (
     <section className={`relative ${bg} min-h-[700px] overflow-hidden`}>
-      <div className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0 -left-12`}>
+      <div
+        className={`absolute top-[45%] -translate-y-1/2 opacity-50 z-0 -left-12`}
+      >
         <img src={bg_hero} className={`h-full w-[90%] float-right`} alt="" />
       </div>
       <motion.div
@@ -81,7 +83,9 @@ const FAQ = ({ bg }) => {
                     {t(item.question)}
                   </AccordionHeader>
                   <AccordionBody className="text-justify text-sm pt-3 2xl:text-lg">
-                    {t(item.answer)}
+                    <div
+                      dangerouslySetInnerHTML={{ __html: t(item.answer) }}
+                    ></div>
                   </AccordionBody>
                 </Accordion>
               </motion.div>

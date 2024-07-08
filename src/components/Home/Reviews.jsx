@@ -1,11 +1,24 @@
 import dots from "../../assets/dots.svg";
 import quote from "../../assets/quote.svg";
-import testo from "../../assets/Rectangle 65.png";
 import { motion } from "framer-motion";
 import { toRight, toDown, toUp } from "../../utils/motionVariants";
 import { t } from "i18next";
+import { testimonials } from "../../data/data";
+import { useEffect, useState } from "react";
 
 const Reviews = () => {
+  const [current, setCurrent] = useState(1);
+  const length = testimonials.length;
+  const nextTestimonial = (index) => {
+    setCurrent(index);
+  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prevCurrent) => (prevCurrent + 1) % length);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [length]);
   return (
     <section className="py-10 md:py-24 relative min-h-[600px]">
       <div>
@@ -13,7 +26,7 @@ const Reviews = () => {
           initial={toDown.hidden}
           animate={toDown.visible}
           transition={{ delay: 0.4 }}
-          className=" text-3xl mx-auto w-fit center gap-2"
+          className="text-3xl mx-auto w-fit center gap-2"
         >
           {t("Some reviews of")}
           <div className="flex flex-col gap-1 mt-3">
@@ -49,37 +62,41 @@ const Reviews = () => {
           initial={toUp.hidden}
           animate={toUp.visible}
           transition={{ delay: 0.4 }}
-          className="bg-light w-full max-w-[800px] h-96 mt-20 relative rounded p-7 pt-20 md:pr-32 text-start "
+          className="bg-light w-full max-w-[800px] min-h-96 mt-20 relative rounded p-7 pt-20 md:pr-32 text-start "
         >
           <div className="absolute -top-5 md:-top-10 left-7 flex gap-1 md:gap-3">
             <img src={quote} alt="" className="w-5 md:w-10" />
             <img src={quote} alt="" className="w-5 md:w-10" />
           </div>
           <div className="absolute top-10 md:top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 md:translate-x-0 md:-right-20">
-            <div className="relative mb-1">
+            <div className="relative mb-1 w-36 h-36">
               <div className="w-4 h-4 bg-secondary absolute -top-2 -right-2"></div>
-              <img src={testo} alt="" className="w-36 h-36" />
+              <img src={testimonials[current]?.logo} alt="" className="w-36 h-36" />
             </div>
             <div>
-              <h5 className="text-secondary text-lg">Mark Rise</h5>
+              <h5 className="text-secondary text-lg">{testimonials[current]?.name}</h5>
               <div className="flex gap-1 md:flex-col">
-                <p className="text-[11px]">CEO founder.</p>
-                <p className="text-[11px] uppercase">Alarm</p>
+                <p className="text-[11px]">{testimonials[current]?.position}</p>
+                <p className="text-[11px] uppercase">
+                  {testimonials[current]?.projectName}
+                </p>
               </div>
             </div>
           </div>
-          <div className="md:line-clamp-[10] line-clamp-[8] text-lg mt-16 md:mt-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vel
-            lobortis tincidunt fames quisque mauris at diam. Nullam morbi ipsum
-            turpis amet id posuere torto quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore.
+          <div className=" text-lg mt-16 md:mt-0 text-end leading-loose">
+            {testimonials[current]?.review}
           </div>
         </motion.div>
         <div className="mx-auto center gap-1">
-          <div className="w-10 h-1 bg-secondary rounded-full"></div>
-          <div className="w-2 h-1 bg-light rounded-full"></div>
-          <div className="w-2 h-1 bg-light rounded-full"></div>
+          {testimonials.map((_, index) => (
+            <div
+              key={index}
+              onClick={() => nextTestimonial(index)}
+              className={`w-2 h-2 rounded-full cursor-pointer ${
+                index === current ? "bg-secondary !w-10" : "bg-light"
+              }`}
+            ></div>
+          ))}
         </div>
       </div>
     </section>
