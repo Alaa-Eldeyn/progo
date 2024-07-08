@@ -1,12 +1,14 @@
 import Logo from "../Logo";
 import { Link, NavLink } from "react-router-dom";
 import { useGlobalContext } from "../context";
-import i18n, { t } from "i18next";
+import i18n from "i18next";
 import { navItems } from "../../data/data";
-
+import { useTranslation } from "react-i18next";
 const Header = () => {
   const { isEnglish, setIsEnglish, sideBarOpen, setSideBarOpen } =
     useGlobalContext();
+  const { t } = useTranslation();
+
   return (
     <header className="h-20 2xl:h-28 bg-light fixed top-0 w-full z-50 shadow-lg">
       <div className="container ">
@@ -52,31 +54,30 @@ const Header = () => {
               >
                 {t("start now")}
               </Link>
-            <div className="block md:hidden">
-              <button
-                onClick={() => {
-                  setSideBarOpen(!sideBarOpen);
-                }}
-                className="rounded bg-primary p-2 text-white transition hover:text-gray-600/75"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
+              <div className="block md:hidden">
+                <button
+                  onClick={() => {
+                    setSideBarOpen(!sideBarOpen);
+                  }}
+                  className="rounded bg-primary p-2 text-white transition hover:text-gray-600/75"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
-            </div>
-
           </div>
         </div>
       </div>

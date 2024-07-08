@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { navItems } from "../data/data";
 import { useGlobalContext } from "./context";
-import i18n, { t } from "i18next";
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
 
 const SideBar = () => {
   const { isEnglish, setIsEnglish,sideBarOpen, setSideBarOpen } =
     useGlobalContext();
+  const { t } = useTranslation();
   return (
     <>
       <div
