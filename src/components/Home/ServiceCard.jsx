@@ -1,6 +1,7 @@
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ icon, service }) => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="bg-primary z-10 rounded-2xl h-40 2xl:h-48 relative center group hover:bg-secondary soft !duration-400">

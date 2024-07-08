@@ -1,6 +1,7 @@
 import { subscribeData } from "../../data/data";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 const Subscribe = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative">
       <div className="center pt-10 md:pt-24 pb-20">

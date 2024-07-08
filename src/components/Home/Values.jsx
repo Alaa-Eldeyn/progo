@@ -4,9 +4,10 @@ import { valueCards } from "../../data/data";
 import ValueCard from "./ValueCard";
 import { motion } from "framer-motion";
 import { toRight, toUp } from "../../utils/motionVariants";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Values = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-[600px] overflow-hidden">
       <div

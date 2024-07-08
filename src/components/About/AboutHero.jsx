@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { toLeft, toRight } from "../../utils/motionVariants";
 import bg_hero from "../../assets/bg-hero.svg";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import SocialMedia from "../../components/SocialMedia";
 import hero from "../../assets/hero.png";
 import bye from "../../assets/About/bye.svg";
 
 const AboutHero = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative overflow-hidden min-h-[700px] 2xl:min-h-[800px] mt-20">
       <div

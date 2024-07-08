@@ -2,11 +2,12 @@ import bg_hero from "../../assets/bg-hero.svg";
 import about1 from "../../assets/Rectangle 14.png";
 import about2 from "../../assets/Rectangle 13.png";
 import MiniTitle from "../MiniTitle";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { toRight, toLeft } from "../../utils/motionVariants";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative bg-light min-h-[600px] overflow-hidden">
       <div

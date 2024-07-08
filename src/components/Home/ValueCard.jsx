@@ -1,6 +1,7 @@
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const ValueCard = ({ icon, title, description }) => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="flex gap-6 md:gap-8 rounded-2xl bg-light p-5 z-10 relative">

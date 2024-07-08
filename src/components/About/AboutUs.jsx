@@ -1,9 +1,10 @@
 import { useState } from "react";
 import MiniTitle from "../MiniTitle";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
   const [isFull, setIsFull] = useState(false);
+  const { t } = useTranslation();
   const fullDescription = `
           <br />
           ${t(

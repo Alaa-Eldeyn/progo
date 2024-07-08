@@ -2,10 +2,11 @@ import img from "../../assets/Vector4.svg";
 import AllServices from "../../components/Service/AllServices";
 import Subscribe from "../../components/Service/Subscribe";
 import Contact from "../../components/Home/Contact";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { ScrollUp } from "../../components/ScrollUp";
 
 const ServicesPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <ScrollUp />

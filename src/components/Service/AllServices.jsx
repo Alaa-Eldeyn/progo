@@ -7,9 +7,10 @@ import {
 import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
 import { toUp } from "../../utils/motionVariants";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const HeadLine = ({ title }) => {
+  const { t } = useTranslation();
   return (
     <div className="center gap-3 pb-5">
       <div className="text-xl">{t(title)}</div>

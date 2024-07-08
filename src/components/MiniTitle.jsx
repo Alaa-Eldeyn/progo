@@ -1,8 +1,9 @@
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { toDown } from "../utils/motionVariants";
 
 const MiniTitle = ({ title }) => {
+  const { t } = useTranslation();
   return (
     <div className="w-fit max-w-[600px]">
       <motion.h2

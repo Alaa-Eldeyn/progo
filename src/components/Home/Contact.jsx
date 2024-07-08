@@ -6,9 +6,10 @@ import clock from "../../assets/clock-svgrepo-com 1.svg";
 import { socialMedia } from "../../data/data";
 import { motion } from "framer-motion";
 import { toRight } from "../../utils/motionVariants";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-light relative overflow-hidden">
       <div className="flex justify-between md:items-center h-full min-h-[700px] items-end flex-col md:flex-row gap-5">

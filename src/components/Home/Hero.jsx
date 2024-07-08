@@ -1,4 +1,4 @@
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import SocialMedia from "../SocialMedia";
 import hero from "../../assets/hero.png";
 import bg_hero from "../../assets/bg-hero.svg";
@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { toRight, toLeft } from "../../utils/motionVariants";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative overflow-hidden md:min-h-[700px] 2xl:min-h-[770px] mt-20">
       <div

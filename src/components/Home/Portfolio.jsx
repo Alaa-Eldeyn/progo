@@ -4,7 +4,7 @@ import MiniTitle from "../MiniTitle";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import { toRight, toUp } from "../../utils/motionVariants";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Modal from "../Portfolio/Modal";
 
@@ -14,6 +14,7 @@ const Portfolio = () => {
   const [description, setDescription] = useState("");
   const [dialogImg, setDialogImg] = useState("");
   const handleOpen = () => setOpen((cur) => !cur);
+  const { t } = useTranslation();
   return (
     <>
       <Modal

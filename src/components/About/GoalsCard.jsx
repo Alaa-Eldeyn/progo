@@ -1,6 +1,7 @@
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const GoalsCard = ({ title, description }) => {
+  const { t } = useTranslation();
   return (
     <div className="relative text-start min-w-64 flex-grow max-w-[1000px] h-72 group">
       <div className="w-full h-full bg-light rounded-lg z-10 p-4 absolute text-center">
