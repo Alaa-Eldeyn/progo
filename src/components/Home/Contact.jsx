@@ -85,8 +85,8 @@ const Contact = () => {
                   <div>
                     <img src={phone} alt="" className="w-8 h-8" />
                   </div>
-                  <a href="http://wa.me/+201099402670" target="_blank">
-                    +20 0112 003 0082
+                  <a href="http://wa.me/+201004894245" target="_blank">
+                    0100 489 4245
                   </a>
                 </div>
                 <div className="center gap-4">
